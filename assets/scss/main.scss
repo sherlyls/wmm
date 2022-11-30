@@ -350,7 +350,7 @@ input[type="number"] {
     position: relative;
     &::before {
       content: "";
-      border-top: dashed 3px green;
+      border-top: dashed 3px #3ad093;
       width: 100%;
       position: absolute;
       top: -24px;
