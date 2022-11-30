@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<meta name="theme-color" content="#044684">
+
+	<title>Wirausaha Muda Mandiri</title>
+	<meta name="title" content="Wirausaha Muda Mandiri">
+	<meta name="description" content="Ayo ikutan jadi bagian dari perjalanan keseruan WMM 2022">
+	<meta name="author" content="MPI">
+	<meta name="image_src" content="">
+	<meta name="google-site-verification" content="">
+	<meta name="msvalidate.01" content="">
+
+	<meta property="og:title" content="Wirausaha Muda Mandiri">
+	<meta property="og:description" content="Ayo ikutan jadi bagian dari perjalanan keseruan WMM 2022">
+	<meta property="og:url" content="https://wirausahamandiri">
+	<meta property="og:image" content="https://client.okezone.com/testing/wirausaha_muda_mandiri/assets/images/favicon.png">
+
+	<meta name="googlebot-news" content="index,follow">
+
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/plugin/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="assets/plugin/datepicker/datepicker.css">
+	<link rel="stylesheet" href="assets/fonts/fa-5.15.1/css/all.css">
+</head>
+
+<body>
+	<div class="nav-header">
+		<div class="container content-row">
+			<div class="nav-left">
+				<a href="index-login.html" class="menu"><i class="fas fa-chevron-left"></i> Kembali</a>
+			</div>
+			<div class="nav-profil">
+				<a href="javascript:void(0);" class="avatar">
+					<img src="assets/images/2022/default-ava.png" alt="ava"> 
+					<i class="fas fa-chevron-down"></i>
+				</a>
+				<div class="drop-profil">
+					<a href="index-login.html">Home</a>
+					<a href="form-data-pribadi.html">Profile</a>
+					<a href="dashboard-user.html">Dashboard</a>
+					<a href="#">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-data">
+		<div class="container">
+			<div class="title-form">
+				FORMULIR DATA PRIBADI
+			</div>
+			<form action="#" method="POST" onsubmit="return checksubmit()">
+				<div class="warp-form">
+					<div class="form-group">
+						<div class="label">Nama Peserta</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input frm-error" name="nama_peserta" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group-horizontal">
+						<div class="form-group-double">
+							<div class="label">Tempat Lahir</div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group">
+								<input type="text" class="input" name="tempat_lahir" placeholder="ketik tempat lahir disini">
+							</div>
+						</div>
+						<div class="form-group-double">
+							<div class="label pl-10">Tanggal Lahir</div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group">
+								<input type="text" class="input-picker datepicker frm-error" name="tanggal_lahir">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Email</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="email" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nomor Handphone <span class="required">*</span></div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="number" class="input number" name="no_hp" maxlength="13" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">No. KTP </div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="number" class="input number" name="no_ktp" maxlength="16" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group-label">
+						<div class="label">No. NPWP</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group-label">
+							<input type="number" class="input number input-med-2" name="no_npwp" maxlength="15" placeholder="ketik disini">
+						</div>
+						<div class="label-ket">
+							<label href="#" class="label-keterangan">* Opsional</label>
+						</div>
+					</div>
+					<div class="form-group-label">
+						<div class="label">Bidang Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group-label">
+							<select class="cmb-box frm-error" name="bidang_usaha">
+								<option>Bakery</option>
+								<option>Pakaian</option>
+							</select>
+						</div>
+						<div class="label-ket label-panduan">
+							<label href="#" class="label-keterangan">* paduan bidang usaha :
+								<a href="dokumen/Panduan-Bidang-Usaha.pdf" 
+									target="_blank" class="link-form">
+									<i class="fas fa-download"></i>
+								</a>
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nama Brand/Usaha <span class="required">*</span></div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="nama_usaha" placeholder="ketik disini">
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn-submit">
+					Submit
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="warp-logo-footer">
+				<div class="logo-mandiri">
+					<img src="assets/images/2022/Logo-Mandiri-blue-yellow.png" alt="Logo-Mandiri-blue-yellow">
+				</div>
+				<div class="logo-mnp">
+					<span>supported by.</span>
+					<img src="assets/images/2022/logo-mnc-portal.png" alt="logo-mnc-portal">
+				</div>
+			</div>
+			<div class="warp-contact-footer">
+				<div class="mandiri-call">
+					<div class="wa-mandiri">
+						<i class="fab fa-whatsapp fa-fw"></i> MITA 0811841 4000 <br>
+						<a href="www.bankmandiri.co.id">www.bankmandiri.co.id</a>
+					</div>
+					<div class="telp-mandiri">
+						<i class="fas fa-phone-alt fa-fw"></i> mandiri call 14000
+					</div>
+				</div>
+				<div class="ojk">
+					<img src="assets/images/2022/OJK-dan-LPS.png" alt="OJK-dan-LPS">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Popup Message -->
+	<div class="popup-msg popup-success">
+		<div class="popup-msg-content">
+			<p>Data pribadi berhasil disubmit</p>
+
+			<div class="popup-msg-btn btn-close">
+				Tutup
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Message -->
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/plugin/datepicker/datepicker.js"></script>
+	<script src="assets/plugin/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/plugin/jquery.inputmask.bundle.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// hide drop profil if click outside menu
+			$(document).mouseup(function(e){
+				var menuDekstop = $('#nav-primary');
+				if (!menuDekstop.is(e.target)
+				&& menuDekstop.has(e.target).length === 0) 
+				{
+					$('.drop-profil').removeClass('drop-profil-show');
+				}
+			});
+		});
+
+		// show or hide menu profil if avatar click
+		$('.avatar').click(function(){
+			$('.drop-profil').toggleClass('drop-profil-show');
+		});
+
+		// Datepicker
+		$('.datepicker').datepicker({
+			uiLibrary: 'bootstrap4',
+			showRightIcon: false,
+			format: 'dd-mm-yyyy',
+		});
+		
+		// close popup
+		$('.btn-close').click(function(){
+			$(".popup-success").removeClass('popup-msg-show');
+			window.location.href = "form-data-usaha.html";
+		});
+
+		// test submit
+		function checksubmit() {
+			$(".popup-success").addClass('popup-msg-show');
+			return false;
+		}
+
+		// / Only Number
+		$('.number').keypress(function(event) {
+            var charCode = (event.which) ? event.which : event.keyCode
+            if (charCode != 46 && charCode > 31 &&
+				(charCode < 48 || charCode > 57))
+				return false;
+			return true;
+        });
+
+        $(".number").bind("paste", function(event){
+        	var charCode = (event.which) ? event.which : event.keyCode
+            if (charCode != 46 && charCode > 31 &&
+				(charCode < 48 || charCode > 57))
+				return false;
+			return true;
+        });
+
+		// Rupiah
+		$(".rupiah").inputmask({
+			alias: "currency",
+			prefix: '',
+			digits: 0
+		});
+	</script>
+</body>
+
+</html>

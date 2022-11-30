@@ -1,0 +1,85 @@
+@import "global";
+
+footer {
+	padding: 40px 0px 20px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.warp-logo-footer, .warp-contact-footer{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo-mandiri{
+	width: 60%;
+
+	img{
+		width: auto;
+		height: 55px;
+	}
+}
+
+.logo-mnp{
+	width: 40%;
+	text-align: right;
+
+	span{
+		font-family: $poppins-semi;
+		font-size: 14px;
+		text-align: center;
+		color: #b2b2b2;
+		position: relative;
+		bottom: 38px;
+		margin-right: 15px;
+	}
+
+	img{
+		width: auto;
+		height: 50px;
+		margin: 4px 0px;
+	}
+}
+
+.warp-contact-footer{
+	border-top: 1px solid #04449b;
+	padding: 20px 0px;
+	margin-top: 15px;
+}
+
+.mandiri-call{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wa-mandiri{
+	font-family: $poppins-regular;
+	font-size: 18px;
+	color: #163b6d;
+
+	a{
+		font-size: 14px; 
+		color: #163b6d;
+	}
+}
+
+.telp-mandiri{
+	font-family: $poppins-regular;
+	font-size: 18px;
+	color: #163b6d;
+
+	&:before{
+		content: "|";
+		margin: 0px 10px;
+	}
+}
+
+.ojk{
+	width: 40%;
+	text-align: right;
+
+	img{
+		width: 300px;
+	}
+}

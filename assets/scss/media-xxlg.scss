@@ -1,0 +1,21 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1400px) and (max-width: 1500px) {
+	.opening-livin-fest {
+		background-size: 320px, 275px, 100% 100%;
+	}
+
+	.opening-livin-fest .tag-opening {
+		margin-bottom: 140px;
+	}
+}
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+	.opening-livin-fest {
+		background-size: 345px, 310px, 100% 100%;
+		background-position: 37% 100%, 60% 100%, 100% 100%;
+	}
+
+	.opening-livin-fest .tag-opening {
+		margin-bottom: 140px;
+	}
+}

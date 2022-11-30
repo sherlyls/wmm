@@ -1,0 +1,1217 @@
+@import 'global';
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.mobile{
+		display: block;
+	}
+
+	.nav-slide{
+		display: block;
+	}
+
+	.desktop{
+		display: none;
+	}
+
+	/* Util */
+	.title-section {
+		font-size: 30px;
+	}
+
+	.title-section-white {
+		font-size: 30px;
+	}
+
+	.container {
+	    width: 100% !important;
+	    max-width: 100% !important;
+	    padding: 0px 32px;
+	}
+
+	.overlay {
+		display: none;
+		background-color: rgba(0,0,0,0.4);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		cursor: pointer;
+	}
+
+	.overlay-show{
+		display: block;
+	}
+
+	// Popup
+	.popup-msg-content{
+		width: 90%;
+	}
+
+	.popup-msg-content-finalis{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		width: 100%;
+		height: 515px;
+		padding: 10px;
+		border-radius: 30px;
+		color: #144774;
+		text-align: center;
+
+		background-image: 
+			url(../images/2022/bg-pop-1.png),
+			url(../images/2022/bg-pop-2.png),
+			url(../images/2022/bg-pop-lamp.png),
+			url(../images/2022/bg-pop-3.png),
+			url(../images/2022/bg-pop-4.png),
+			url(../images/2022/bg-pop.png);
+		background-position: 
+			19% 27%, 90% 10%, 0% 70%, 3% 94%, 100% 90%, 0 0;
+		background-size: 
+			700px, 171px, 70px, 270px, 250px, 100% 100%;
+		background-repeat: no-repeat;
+
+		.btn-close-finalis{
+			top: -9px;
+			right: 5px;
+			width: 36px;
+			height: 36px;
+		}
+
+		.title-konten-finalis{
+			font-size: 21px;
+		    line-height: 22px;
+		    margin-top: 126px;
+		    padding: 0px 10%;
+		}
+
+		.desc-konten-finalis{
+			font-size: 14px;
+			line-height: 20px;
+			margin-top: 24px;
+			padding: 0px 15%;
+
+			img{
+		    	width: 174px;
+				top: 7px;
+				left: 15px;
+				display: block;
+				margin: auto;
+		    }
+		}
+
+		.tag-finalis{
+			margin-top: 150px;
+			font-family: "Vividly-Regular", arial, tahoma;
+		    font-size: 23px;
+		    color: #f8d74f;
+		    -webkit-text-stroke: 0.1px black;
+		    text-shadow: 2px 2px #000000;
+		    margin-left: -45px;
+
+		    span{
+		    	margin-left: 20px;
+		    }
+		}
+	}
+
+	.alert-empty-data{
+		font-size: 16px;
+	}
+
+	/* Nav Header */
+	.nav-header{
+		padding: 20px  0px;
+
+		.nav-left{
+			i{
+				font-size: 16px;
+			}
+		}
+
+		a{
+			font-size: 16px;
+		}
+
+		a.avatar{
+			img{
+				top: 0px;
+				width: 30px;
+				height: 30px;
+			}
+
+			i{
+				top: -10px;
+			}
+		}
+	}
+
+	.nav-profil{
+		.drop-profil{
+			left: unset;
+			right: 0px;
+		}
+	}
+
+	/* Nav Bar */
+	.nav-m{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		padding: 5px 16px;
+		background-color: #0155a3;
+		box-shadow: 0 1px 20px 0 rgba(0,0,0,0.25);
+	}
+
+	.nav-burger{
+		font-size: 25px;
+		color: #fff;
+	}
+
+	/* Nav Slide */
+	.nav-slide{
+		position: fixed;
+		top: 0px;
+		left: -999px;
+		background-color: #fff;
+		width: 75%;
+		height: 100%;
+		z-index: 99;
+		transition: all .2s;
+		box-shadow: 0 1px 20px 0 rgba(0,0,0,0.25);
+	}
+
+	.nav-slide-show{
+		left: 0px;
+	}
+
+	.nav-slide-head{
+		background-color: #0155a3;
+		padding: 6px 24px;
+		display: flex;
+		flex-wrap: wrap;
+		height: 56px;
+	}
+
+	.img-logo-menu{
+		width: 50%;
+		padding: 3px 0px 0px;
+
+		img{
+			width: auto;
+			height: 40px;
+		}
+	}
+
+	.close-nav{
+		width: 50%;
+		padding: 2px 0px 2px;
+		text-align: right;
+
+		i{
+			font-size: 30px;
+			padding: 5px 5px 5px 5px;
+			color: #fff;
+		}
+	}
+
+	.nav-slide-primary{
+		padding: 15px 24px 90px;
+		border-radius: 0px 0px 0px 30px;
+		height: 100%;		
+		overflow-y: scroll;
+		background-color: #0a4a86;
+
+		ul{
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.parent{
+			position: relative;
+
+			img{
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+
+			.ava{
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		.expand-nav::after{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			padding: 6px 5px;
+			content: "\f078";
+			font-family: "Font Awesome\ 5 Free";
+			font-size: 16px;
+			font-weight:900;
+			color: #fff;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+
+		.expand-nav.buka::after{
+			transform: rotate(180deg) translate(0px, 0px);
+			padding: 6px 5px;
+		}
+
+		.parent a{
+			font-family: $poppins-semi;
+			font-size: 16px;
+			display: block;
+			padding: 5px 0px;
+			color: #fff;
+		}
+
+		.parent{
+			.g-signin2{
+				padding: 15px 0px 15px 0px;
+			}
+
+			.btn-google{
+				img{
+					width: auto;
+					border-radius: 0;
+				}
+			}
+		}
+
+		a.parent-home{
+			display: block;
+			padding: 20px 0px 10px 25px;
+			color: #fff;
+			background-color: #fff;
+		}
+
+		a.active{
+			color: #eccf11;
+			text-decoration: none;
+		}
+
+		.child-nav {
+		    display: none;
+		    margin-bottom: 8px;
+		}
+		
+		.child-nav a {
+			padding: 5px 0px;
+			font-family: $poppins-regular;
+			font-size: 16px;
+			color: #fff;
+			position: relative;
+			display: block;
+		    border-bottom: 2px dotted #e6e3e3;
+		}
+	}
+	
+	/* Home */
+	.home{
+		padding: 45px 0px 0px;
+		background-image: 
+			url(../images/2022/bumn-white.png),
+			url(../images/2022/mandiri-white.png),
+			url(../images/2022/Illustration-WMM.png),
+			url(../images/2022/bg-m-home.png);
+		background-position: 
+			7% 150px, 93% 150px, 100% 100%, 0px 0px;
+		background-size: 
+			135px, 140px, 230px, 100% 100%;
+		min-height: 100%;
+
+		.logo-home{
+			display: none;
+		}
+
+		.warp-desc-home{
+			width: 100%;
+			margin-top: 300px;
+
+			img{
+				width: 400px;
+			}
+
+			.desc-home{
+				font-size: 20px;
+			}
+
+			.tag-home{
+				margin: 18px 0px;
+				font-family: $poppins-semi;
+				font-size: 40px;
+			}
+
+			.btn-g-login{
+				img{
+					width: 300px;
+				}
+			}
+
+			.date-home{
+				font-size: 18px;
+				margin-top: 35px;
+			}
+		}
+	}
+
+	/* About */
+	.about {
+		padding: 40px 0px 150px;;
+		background-position: 
+			0 20px, 100% 100%;
+		background-size: 
+			128px, 155px;
+
+		.desc-about {
+			font-size: 18px;
+			padding: 0px 40px;
+		}
+	}
+
+	/* Flow */
+	.flow{
+		padding: 40px 0px;
+		background-image: 
+			url(../images/2022/bg-m-pink.png);
+		background-position: 
+			0px 0px;
+		background-size: 
+			100% 100%;
+	}
+
+	.tab {
+		.tab-existing, .tab-plan{
+			font-size: 12px;
+		}
+	}
+
+	.tab button {
+		padding: 11px 11px;
+	}
+
+	/* Information */
+	.information{
+		padding: 40px 0px 85px;
+		background: #ff48d4;
+		background-image: 
+		url(../images/2022/bg-pink.png);
+		background-position: 
+			0px 0px;
+		background-size: 
+			100% 100%;
+		background-repeat: no-repeat;
+
+		.warp-information{
+			margin: 30px -10px 0px;
+		}
+
+		.list-information{
+			width: 33.33%;
+			padding: 0px 10px;
+			margin-bottom: 0px;
+		}
+
+		.img-information{
+			.btn-information{
+				bottom: -30px;
+
+				img{
+					width: 180px;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	/* Testimoni */
+	.testimoni{
+		padding: 30px 0px;
+		background-position: 
+			0px 100%, 100% 40px;
+		background-size: 
+			310px, 230px;
+
+		.contain-testimony{
+			padding: 0px 16px;
+		}
+
+		.swiper-slide{
+	 		width: 386px !important;
+	 	}
+
+	 	.testi-prev, .testi-next{	
+	 		img{
+	 			width: 40px;
+	 			opacity: 1;
+	 		}
+
+	 		&:hover, &:focus{
+	 			img{
+		 			width: 40px;
+		 		}
+	 		}
+	 	}
+
+	 	.testi-prev{
+	 		left: 0px;
+	 	}
+
+	 	.testi-next{
+	 		right: 3px;
+	 	}
+
+		.list-testimoni {
+			margin-top: 30px;
+			width: 100% !important;
+			height: 1040px !important;
+			border-radius: 8px;
+			padding: 30px 20px 30px;
+		}
+
+		.testi-alumni {
+			padding: 0px 20px;
+		}
+	}
+
+	/* Registration */
+	.registrasi{
+		padding: 40px 0px;
+
+		.title-registrasi{
+			font-size: 20px;
+			margin: 30px 0px 30px;
+		}
+
+		.list-category {
+			width: 50%;
+			padding: 0px 20px;
+		}
+
+		.desc-category {
+			text-align: center;
+		}
+	}
+
+	/* Footer */
+	.logo-mandiri{
+		width: 50%;
+		margin: 0px;
+
+		img{
+			height: 40px;
+		}
+	}
+
+	.logo-mnp{
+		width: 50%;
+
+		span{
+			bottom: 38px;
+			margin-right: 5px;
+		}
+
+		img{
+			height: 40px;
+			margin: 0px 0px;
+		}
+	}
+
+	.warp-contact-footer{
+		margin-top: 15px;
+	}
+
+	.mandiri-call{
+		width: 50%;
+	}
+
+	.wa-mandiri{
+		font-size: 15px;
+
+		a{
+			font-size: 12px; 
+		}
+	}
+
+	.telp-mandiri{
+		font-size: 15px;
+
+		&:before{
+			margin: 0px 5px;
+		}
+	}
+
+	.ojk{
+		width: 50%;
+		margin-top: 0px;
+		text-align: right;
+
+		img{
+			width: 300px;
+		}
+	}
+
+	/* Form Data */
+	.form-data{
+		padding: 10px 0px 50px;
+		background-size: 
+			130px,120px;
+
+		.title-form{
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		.warp-form, .warp-form-table, .warp-form-agree{
+			border-radius: 	10px;
+		}
+
+		.warp-form{
+			padding: 20px 10px;
+		}
+
+		.warp-form-agree{
+			margin-top: 20px;
+			padding: 20px 10px;
+		}
+
+		.warp-form-table{
+			padding: 20px 10px;
+		}
+
+		.note-form{
+			font-size: 14px;
+		}
+
+		.note-label{
+			display: unset;
+			width: unset;
+		}
+
+		.label{
+			font-size: 16px;
+			width: 100%;
+
+			&::after{
+				content: ':';
+				padding-left: 4px;
+			}
+		}
+
+		.label-ket{
+			font-size: 13px;
+			padding-left: 0px;
+			width: 100%;
+		}
+
+		.label-ket.width-auto {
+			width: 100%;
+		}
+
+		.label-panduan{
+			margin-top: 16px;
+		}
+
+		.sparate{
+			display: none;
+		}
+
+		.frm-input-group-label{
+			width: 100%;
+		}
+
+		.frm-input-group-span{
+			width: 100%;
+
+			.input{
+				width: 70% !important;
+				margin: 5px 0px;
+			}
+
+			label{
+				font-size: 16px;
+				position: relative;
+				top: 10px;
+			}
+		}
+
+		.frm-input-group{
+			width: 100%
+		}
+
+		.frm-input-group.width-3 {
+			width: 100%;
+			margin-bottom: 16px;
+
+			i{
+				top: 2px;
+			}
+		}
+
+		.frm-input-group-label-icon{
+			width: 100%;
+
+			.label-rp{
+				font-size: 16px;
+				padding: 10px 0px;
+			}
+		}
+
+		// Radio
+		.radio-btn {
+			font-size: 16px;
+			margin: 5px 20px 5px 0px;
+		}
+
+		.checkmark {
+			height: 22px;
+			width: 22px;
+		}
+
+		.radio-btn .checkmark:after {
+			width: 16px;
+			height: 16px;
+		}
+
+		// Check Box
+		.warp-produk{
+			width: 100%;
+		}
+
+		.warp-checkbox {
+		  	width: 25px;
+		  	top: 4px;
+		}
+
+		.warp-checkbox label {
+			height: 25px;
+			width: 25px;
+		}
+
+		.warp-checkbox label:after {
+			height: 9px;
+			left: 4px;
+			top: 4px;
+			width: 16px;
+		}
+
+		.label-checkbox{
+			font-size: 16px;
+			width: calc(100% - 25px);
+		}
+
+		// cmb kategori
+		.warp-cmb-kategori{
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0px -4px;
+		}
+
+		.form-group-cmb-lg{
+			width: 100%;
+			padding: 0px 4px;
+		}
+
+		.form-group-cmb-md{
+			width: 100%;
+			padding: 0px 4px;
+		}
+
+		.cmb-kategori{
+		    font-size: 16px;
+		    padding: 10px 10px;
+		    background-size: 15px;
+		    margin-bottom: 16px;
+		}
+
+		.input{
+			font-size: 16px;
+			padding: 8px 10px;
+			height: 45px
+		}
+
+		.input.width-2 {
+			width: 100%;
+		}
+
+		.input-picker{
+			font-size: 16px;
+			padding: 8px 10px;
+			height: 45px
+		}
+
+		input[type="file"] {
+		    height: 43px;
+		}
+
+		.cmb-box{
+			padding: 8px 6px;
+			font-family: $poppins-regular;
+			font-size: 16px;
+			height: 45px;
+		}
+
+		textarea{
+			height: 200px;
+		}
+
+		.form-group-double{
+			width: 100%;
+
+			.pl-10{
+				padding: 0px;
+			}
+		}
+
+		.persetujuan{
+			font-size: 16px;
+			margin: 0px 0px 30px;
+		}
+
+		.warp-captcha{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.captcha{
+			display: block;
+			margin: auto;
+
+			img{
+				width: 200px;
+			}
+		}
+
+		.syarat-ketentuan{
+			font-size: 16px;
+			padding: 13px 30px;
+			width: 100%;
+		}
+
+		.warp-submit{
+
+			.warp-checkbox {
+				top: 4px;
+			  	width: 25px;
+			}
+
+			.warp-checkbox label {
+				height: 25px;
+				width: 25px;
+			}
+
+			.warp-checkbox label:after {
+				height: 9px;
+				left: 4px;
+				top: 4px;
+				width: 16px;
+			}
+
+			.label-checkbox{
+				font-size: 16px;
+				width: calc(100% - 25px);
+			}
+		}
+
+		.btn-submit{
+			font-size: 16px;
+			padding: 13px 30px;
+			margin: 30px auto 0px;
+			width: 100%;
+			border-radius: 8px;
+		}
+
+		.table-dashboard-m{
+			width: 100%;
+
+			.warp-data-table{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.list-data-kategori{
+				padding: 16px 0px;
+				border-bottom: 1px solid #eaeaea;
+
+				&:last-child{
+					border-bottom: 0px;
+				}
+			}
+
+			.title-th{
+				width: 30%;
+				font-family: $poppins-regular;
+				font-size: 16px;
+				color: #0155a3;
+				padding: 8px 0px;
+			}
+
+			.data-td{
+				width: 70%;
+				font-family: $poppins-regular;
+				font-size: 14px;
+				color: #000;
+				padding: 8px 0px;
+
+
+				.link-reels{
+					display: block;
+					white-space: pre-wrap; /* css-3 */    
+					white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+					white-space: -pre-wrap; /* Opera 4-6 */    
+					white-space: -o-pre-wrap; /* Opera 7 */    
+					word-wrap: break-word; /* Internet Explorer 5.5+ */
+				}
+			}
+
+			.btn-grup{
+				justify-content: left;
+			}
+		}
+
+	}
+
+	/* Finalis */
+	.header-finalis{
+		display: none;
+	}
+
+	.finalis{
+		padding: 30px 16px 140px;
+		background-position: 
+			98% 16%, 3% 44%, 98% 71%, 3% 91%, 0% 100%, 100% 100%, 0px, 0px;
+		background-size: 
+			140px, 140px, 140px, 140px, 225px, 195px, 0px, 0px;
+
+		.warp-header{
+			.logo-bumn{
+				padding: 15px 0px;
+
+				img{
+					width: auto;
+					height: 30px;
+				}
+			}
+
+			.logo-mandiri-finalis{
+				img{
+					width: auto;
+					height: 35px;
+				}
+			}
+		}
+
+		.warp-content{
+			padding: 0px 0px;
+
+			.greeting{
+				font-size: 45px;
+			}
+
+			.desc-greeting{
+				font-size: 17px;
+				padding: 0px 85px;
+			}
+		}
+
+		.warp-table-finalis{
+			margin: 60px 40px;
+
+			.title-kategori{
+				width: 290px;
+				height: 60px;
+				font-size: 22px;
+			}
+
+			.table-finalis-top{
+				height: 25px;
+			}
+
+			.table-finalis-bottom{
+				height: 25px;
+			}
+
+			.table-finalis{
+				padding: 0px 20px;
+
+				table{
+					thead tr th {
+					  	font-size: 20px;
+					}
+
+					tbody tr td {
+					  	font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.warp-histori-finalis{
+			margin: 20px 0px;
+			text-align: center;
+
+			.warp-btn-histori-finalis{
+				flex-wrap: wrap;
+			}
+
+			.btn-histori-finalis, .btn-histori-finalis-golden, .btn-histori-finalis-win{
+				margin: 10px 5px;
+
+				a{
+					font-size: 17px;
+				}
+			}
+
+			.btn-histori-finalis{
+				a{
+					width: 120px;
+					height: 50px;
+				}
+				
+			}
+
+			.btn-histori-finalis-golden{
+				a{
+					width: 125px;
+					height: 65px;
+				}
+			}
+
+			.btn-histori-finalis-win{
+				a{
+					width: 220px;
+					height: 50px;
+				}
+			}
+		}
+	}
+
+	.logo-proud{
+		bottom: 40px;
+
+		img{
+			width: 150px;
+		}
+	}
+
+	.table-finalis-2 table thead tr th:first-child, 
+	.table-finalis-2 table tbody tr td:first-child {
+		padding: 2.5px 5px;
+	}
+
+	.pemenang{
+		padding: 30px 16px 140px;
+		background-position: 
+			100% 20%, 5% 55%, 50% 95%, 120% 60%, 93% 34%, 0% 70%, 100% 100%, 0% 100%;
+		background-size: 
+			100px, 120px, 150px, 120px, 295px, 195px, 200px, 255px;
+
+		.awan-kinton{
+			display: none;
+		}
+
+		.warp-header-pemenang{
+			display: flex;
+			flex-wrap: wrap;
+
+			.logo-bumn{
+				img{
+					height: 20px;
+				}
+			}
+
+			.logo-mandiri-finalis{
+				img{
+					height: 30px;
+					margin: 6px 0px;
+				}
+			}
+		}
+
+		.warp-content-pemenang{
+			.greeting{
+				font-size: 30px;
+				line-height: 38px;
+				padding: 0px 40px;
+			}
+
+			.desc-greeting{
+				font-size: 16px;
+			}
+		}
+
+		.warp-table-pemenang{
+			margin: 0px 60px 40px;
+
+			.title-kompetisi{
+				font-size: 22px;
+
+				&:before{
+					width: 45px;
+					height: 47px;
+					margin-right: 10px;
+				}
+			}
+
+			.table-pemenang{
+				padding: 30px 40px;
+			}
+
+			.warp-list-pemenang{
+				background: #fad400;
+				background-position: 95% 25px;
+				background-size: 55px;
+				padding: 10px 10px 20px;
+			}
+
+			.list-pemenang{
+				margin: 20px 0px;
+
+				img{
+					width: 65px;
+					height: 67px;
+				}
+
+				.desc-pemenang{
+					width: calc(100% - 65px);
+					padding-left: 10px;
+
+					.kategori{
+						font-size: 12px;
+					}
+
+					.nama, .brand{
+						font-size: 20px;
+					}
+
+					.nama{
+						&:after{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+
+		.warp-histori-finalis{
+			margin: 20px 0px;
+			text-align: center;
+
+			.warp-btn-histori-finalis{
+				flex-wrap: wrap;
+			}
+
+			.btn-histori-finalis, .btn-histori-finalis-golden, .btn-histori-finalis-win{
+				margin: 10px 5px;
+
+				a{
+					font-size: 17px;
+				}
+			}
+
+			.btn-histori-finalis{
+				a{
+					width: 120px;
+					height: 50px;
+				}
+				
+			}
+
+			.btn-histori-finalis-golden{
+				a{
+					width: 125px;
+					height: 65px;
+				}
+			}
+
+			.btn-histori-finalis-win{
+				a{
+					width: 220px;
+					height: 50px;
+				}
+			}
+		}
+	}
+
+	/* Livin Fest */
+	.livin-fest{
+		padding: 125px 16px 280px;
+		background-image:
+			url(../images/2022/bumn-color.png),
+			url(../images/2022/Logo-Mandiri-blue-yellow.png),
+			url(../images/2022/fest-border-bottom-m.png),
+			url(../images/2022/fest-bg-top-m.png),
+			url(../images/2022/fest-bg-bottom-m.png);
+		background-position: 
+			7% 85px, 93% 71px, 0% 100%, 50% 23%, 50% 100%;
+		background-size: 
+			135px, 140px, 100%, 100%, 48%;
+
+		.fest-logo{
+			width: 253px;
+			margin: 20px auto;
+		}
+
+		.tanggal-fest{
+			font-size: 16px;
+		}
+
+		.warp-list-guest{
+			width: 392px;
+
+			&:after{
+				width: 284px;
+				height: 269px;
+				border-radius: 23px;
+			}
+		}
+
+		.list-guest{
+			font-size: 16px;
+			border: 2px solid #333130;
+			padding: 6px 24px;
+		}
+	}
+
+	/* Opening Livin Fest */
+	.opening-livin-fest{
+		padding: 30px 16px 30px;
+		background-image:
+			url(../images/2022/opening-fest-left-m.png),
+			url(../images/2022/opening-fest-right.png),
+			url(../images/2022/opening-fest-bg-m.png);
+		background-position: 
+			50% 100%, 66% 100%, 100% 100%;
+		background-size: 
+			300px, 0px, 100% 100%;
+		background-repeat: no-repeat;
+
+		.title-opening{
+			font-size: 18px;
+		}
+
+		img{
+			width: 300px;
+			display: block;
+			margin: 20px auto;
+		}
+
+		.tag-opening{
+			font-size: 18px;
+			margin-bottom: 300px;
+		}
+	}
+}

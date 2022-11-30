@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<meta name="theme-color" content="#044684">
+
+	<title>Wirausaha Muda Mandiri</title>
+	<meta name="title" content="Wirausaha Muda Mandiri">
+	<meta name="description" content="Ayo ikutan jadi bagian dari perjalanan keseruan WMM 2022">
+	<meta name="author" content="MPI">
+	<meta name="image_src" content="">
+	<meta name="google-site-verification" content="">
+	<meta name="msvalidate.01" content="">
+
+	<meta property="og:title" content="Wirausaha Muda Mandiri">
+	<meta property="og:description" content="Ayo ikutan jadi bagian dari perjalanan keseruan WMM 2022">
+	<meta property="og:url" content="https://wirausahamandiri">
+	<meta property="og:image" content="https://client.okezone.com/testing/wirausaha_muda_mandiri/assets/images/favicon.png">
+
+	<meta name="googlebot-news" content="index,follow">
+
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/plugin/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="assets/plugin/datepicker/datepicker.css">
+	<link rel="stylesheet" href="assets/fonts/fa-5.15.1/css/all.css">
+</head>
+
+<body>
+	<div class="nav-header">
+		<div class="container content-row">
+			<div class="nav-left">
+				<a href="index-login.html" class="menu"><i class="fas fa-chevron-left"></i> Kembali</a>
+			</div>
+			<div class="nav-profil">
+				<a href="javascript:void(0);" class="avatar">
+					<img src="assets/images/2022/default-ava.png" alt="ava"> 
+					<i class="fas fa-chevron-down"></i>
+				</a>
+				<div class="drop-profil">
+					<a href="index-login.html">Home</a>
+					<a href="form-data-pribadi.html">Profile</a>
+					<a href="dashboard-user.html">Dashboard</a>
+					<a href="#">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-data">
+		<div class="container">
+			<div class="title-form">
+				FORMULIR DATA USAHA
+			</div>
+			<form action="#" method="POST" onsubmit="return checksubmit()">
+				<div class="warp-cmb-kategori">
+					<div class="form-group-cmb-lg">
+						<select class="cmb-kategori" name="kompetisi" id="kompetisi">
+							<option value="" disabled="">Pilih Kompetisi</option>
+							<option value="bp">Business Plan</option>
+							<option value="be">Business Existing</option>
+							<option value="sp">Santripreneur</option>
+						</select>
+					</div>
+					<div class="form-group-cmb-md">
+						<select class="cmb-kategori" name="kategori" id="kategori">
+							<option value="" disabled="">Pilih Kategori</option>
+							<option value="boga">Boga</option>
+							<option value="kreatif">Kreatif</option>
+							<option value="tehnologi">Tehnologi</option>
+							<option value="sosial">Sosial</option>
+						</select>
+					</div>
+					<div class="form-group-cmb-md">
+						<select class="cmb-kategori" name="kategori" id="kategori">
+							<option value="" disabled="">Pilih Sub Kategori</option>
+							<option value="wmm">Makanan dan Camilan Kemasan</option>
+							<option value="bpc">Makanan dan Minuman Dine In</option>
+							<option value="bpc">Minuman Kemasan</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="bp" class="warp-form hidden">
+					<div class="form-group">
+						<div class="label">Nama <span class="required">*</span></div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input frm-error" name="nama_peserta" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Kota Domisili</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input frm-error" name="kota_peserta" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Gender</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<select class="cmb-box" name="gender">
+								<option value="laki-laki">Laki-laki</option>
+								<option value="perempuan">Perempuan</option>
+								<option value="tidak dikenal">Tidak Dikenal</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">NIK </div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="number" class="input" name="no_ktp" onkeypress="return isNumberKey(event)" maxlength="16" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Tanggal Lahir</div>
+						<span class="sparate">:</span>
+						<div class="frm-input-group">
+							<input type="text" class="input-picker datepicker frm-error" name="tanggal_lahir">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Email</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="email" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">No. WA</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="no_hp" onkeypress="return isNumberKey(event)" maxlength="13" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nama Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="nama_usaha" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Bidang Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<select class="cmb-box width-2" name="bidang_usaha">
+								<option value="bakery">Bakery</option>
+								<option value="pakaian">Pakaian</option>
+								<option value="makanan">Makanan</option>
+							</select>
+							<a href="dokumen/Panduan-Bidang-Usaha.pdf" target="_blank" class="link-form">
+								<i class="fas fa-download"></i>
+							</a>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Universitas</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="nama_sekolah" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group-label">
+						<div class="label">Region</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group-label">
+							<input type="text" class="input" name="region">
+						</div>
+						<div class="label-ket">
+							<label href="#" class="label-keterangan">* readonly</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Deskripsi Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<textarea name="deskripsi"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Detail Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="file" class="input width-2" name="detail">
+							<div class="label-ket" style="width: auto">
+								<label href="#" class="label-keterangan">*) Upload PDF Max.10 hal 2MB</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group-horizontal">
+						<div class="form-group">
+							<div class="label">Social Media <span class="note-label">* Pilih Salah Satu</span></div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group width-3">
+								<i class="fab fa-facebook-square fa-fw"></i>
+								<input type="text" class="input" name="nama_fb" placeholder="facebook">
+							</div>
+
+							<div class="frm-input-group width-3">
+								<i class="fab fa-instagram-square fa-fw"></i>
+								<input type="text" class="input txt-ig" name="nama_ig" placeholder="instagram">
+							</div>
+
+							<div class="frm-input-group width-3">
+								<i class="fab fa-youtube-square fa-fw"></i>
+								<input type="text" class="input txt-yt" name="nama_yt" placeholder="youtube">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nomor Rekening Mandiri</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="number" class="input" onchange="" onkeypress="return isNumberKey(event)" name="norek_usaha">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Tautan Video Challenge ( Optional )</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="link_video">
+						</div>
+					</div>
+				</div>
+
+				<div id="be" class="warp-form hidden">
+					<div class="form-group">
+						<div class="label">Nama</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input frm-error" name="nama_peserta" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Gender</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<select class="cmb-box" name="gender">
+								<option value="laki-laki">Laki-laki</option>
+								<option value="perempuan">Perempuan</option>
+								<option value="tidak dikenal">Tidak Dikenal</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">NIK </div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="no_ktp" onkeypress="return isNumberKey(event)" maxlength="16" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Tanggal Lahir</div>
+						<span class="sparate">:</span>
+						<div class="frm-input-group">
+							<input type="text" class="input-picker datepicker frm-error" name="tanggal_lahir">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Email</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="email" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">No. WA</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="no_hp" onkeypress="return isNumberKey(event)" maxlength="13" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nama Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="nama_usaha" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Bidang Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<select class="cmb-box width-2" name="bidang_usaha">
+								<option value="bakery">Bakery</option>
+								<option value="pakaian">Pakaian</option>
+								<option value="makanan">Makanan</option>
+							</select>
+							<a href="dokumen/Panduan-Bidang-Usaha.pdf" target="_blank" class="link-form">
+								<i class="fas fa-download"></i>
+							</a>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Alamat Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="alamat" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group-horizontal">
+						<div class="form-group-double">
+							<div class="label">Provinsi</div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group">
+								<select class="cmb-box" name="provinsi">
+									<option>Jakarta</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group-double">
+							<div class="label pl-10">Kota Usaha</div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group">
+								<select class="cmb-box" name="kota">
+									<option>Jakarta Selatan</option>
+									<option>Jakarta Barat</option>
+									<option>Jakarta Utara</option>
+									<option>Jakarta Timur</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group-label">
+						<div class="label">Region</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group-label">
+							<input type="text" class="input" name="region">
+						</div>
+						<div class="label-ket">
+							<label href="#" class="label-keterangan">* readonly</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Deskripsi Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="file" class="input width-2" name="deskripsi">
+							<div class="label-ket width-auto">
+								<label href="#" class="label-keterangan">*) Upload PDF Max.10 hal 2MB</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group-horizontal">
+						<div class="form-group">
+							<div class="label">Social Media <span class="note-label">* Pilih Salah Satu</span></div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group width-3">
+								<i class="fab fa-facebook-square fa-fw"></i>
+								<input type="text" class="input" name="nama_fb" placeholder="facebook">
+							</div>
+
+							<div class="frm-input-group width-3">
+								<i class="fab fa-instagram-square fa-fw"></i>
+								<input type="text" class="input txt-ig" name="nama_ig" placeholder="instagram">
+							</div>
+
+							<div class="frm-input-group width-3">
+								<i class="fab fa-youtube-square fa-fw"></i>
+								<input type="text" class="input txt-yt" name="nama_yt" placeholder="youtube">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Omset Rata-rata dalam 4 tahun</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group-label-icon">
+							<span class="label-rp">Rp.</span>
+							<input type="text" class="input rupiah" name="omset_2016">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Jumlah Pegawai</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<label class="radio-btn">
+								<input type="radio" checked="checked" name="jumlah_karyawan" value="0-10"> 0-10
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio-btn">
+								<input type="radio" name="jumlah_karyawan" value="10-100"> 10-100
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio-btn">
+								<input type="radio" name="jumlah_karyawan" value="100-250"> 100-250
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio-btn">
+								<input type="radio" name="jumlah_karyawan" value="250-500"> 250-500
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio-btn">
+								<input type="radio" name="jumlah_karyawan" value=">500"> >500
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nomor Rekening Mandiri</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" onkeypress="return isNumberKey(event)" name="norek_usaha">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Tautan Video Challenge ( Optional )</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="link_video">
+						</div>
+					</div>
+				</div>
+
+				<div id="sp" class="warp-form hidden">
+					<div class="form-group">
+						<div class="label">Nama</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input frm-error" name="nama_peserta" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Kota Domisili</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input frm-error" name="kota_peserta" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Gender</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<select class="cmb-box" name="gender">
+								<option value="laki-laki">Laki-laki</option>
+								<option value="perempuan">Perempuan</option>
+								<option value="tidak dikenal">Tidak Dikenal</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">NIK </div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="no_ktp" onkeypress="return isNumberKey(event)" maxlength="16" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Tanggal Lahir</div>
+						<span class="sparate">:</span>
+						<div class="frm-input-group">
+							<input type="text" class="input-picker datepicker frm-error" name="tanggal_lahir">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Email</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="email" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">No. WA</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="no_hp" onkeypress="return isNumberKey(event)" maxlength="13" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nama Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="nama_usaha" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Bidang Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<select class="cmb-box width-2" name="bidang_usaha">
+								<option value="bakery">Bakery</option>
+								<option value="pakaian">Pakaian</option>
+								<option value="makanan">Makanan</option>
+							</select>
+
+							<a href="dokumen/Panduan-Bidang-Usaha.pdf" target="_blank" class="link-form">
+								<i class="fas fa-download"></i>
+							</a>
+						</div>
+					</div>
+					<div class="form-group-horizontal">
+						<div class="form-group-double">
+							<div class="label">Provinsi</div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group">
+								<select class="cmb-box" name="provinsi">
+									<option>Jakarta</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group-double">
+							<div class="label pl-10">Kota Usaha</div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group">
+								<select class="cmb-box" name="kota">
+									<option>Jakarta Selatan</option>
+									<option>Jakarta Barat</option>
+									<option>Jakarta Utara</option>
+									<option>Jakarta Timur</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Asal Pesantren</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input frm-error" name="pesantren" placeholder="ketik disini">
+						</div>
+					</div>
+					<div class="form-group-label">
+						<div class="label">Region</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group-label">
+							<input type="text" class="input" name="region">
+						</div>
+						<div class="label-ket">
+							<label href="#" class="label-keterangan">* readonly</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Deskripsi Usaha</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="file" class="input width-2" name="deskripsi">
+							<div class="label-ket" style="width: auto">
+								<label href="#" class="label-keterangan">*) Upload PDF Max.10 hal 2MB</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group-horizontal">
+						<div class="form-group">
+							<div class="label">Social Media <span class="note-label">* Pilih Salah Satu</span></div>
+							<span class="sparate">:</span>
+							<div class="frm-input-group width-3">
+								<i class="fab fa-facebook-square fa-fw"></i>
+								<input type="text" class="input" name="nama_fb" placeholder="facebook">
+							</div>
+
+							<div class="frm-input-group width-3">
+								<i class="fab fa-instagram-square fa-fw"></i>
+								<input type="text" class="input txt-ig" name="nama_ig" placeholder="instagram">
+							</div>
+
+							<div class="frm-input-group width-3">
+								<i class="fab fa-youtube-square fa-fw"></i>
+								<input type="text" class="input txt-yt" name="nama_yt" placeholder="youtube">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Nomor Rekening Mandiri</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" onkeypress="return isNumberKey(event)" name="norek_usaha">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">Tautan Video Challenge ( Optional )</div>
+						<div class="sparate">:</div>
+						<div class="frm-input-group">
+							<input type="text" class="input" name="link_video">
+						</div>
+					</div>
+				</div>
+
+				<div class="warp-form-agree hidden">
+					<!-- Aggreement -->
+					<div class="persetujuan">
+						Data Pribadi diatas sudah diisi dengan benar. Saya siap bergabung menjadi peserta Wirausaha Mandiri 2022 dan mengikuti semua persyaratan dan ketentuan yang berlaku dalam kegiatan ini
+					</div>
+
+					<dv class="warp-captcha">
+						<a class="syarat-ketentuan" href="#">
+							Syarat dan Ketentuan Peserta
+						</a>
+
+						<div class="captcha">
+							<img src="assets/images/capcha.png">
+						</div>
+					</dv>
+
+					<div class="warp-submit">
+						<div class="frm-checkbox t-n-m">
+							<div class="warp-checkbox">
+								<input type="checkbox" class="cb-bookmark" id="cb-submit" name="bookmark-1" />
+								<label for="cb-submit"></label>
+							</div>
+							<span class="label-checkbox">
+								cek dan lanjutkan ke langkah berikutnya
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<button type="submit" class="btn-submit">
+					Submit
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="warp-logo-footer">
+				<div class="logo-mandiri">
+					<img src="assets/images/2022/Logo-Mandiri-blue-yellow.png" alt="Logo-Mandiri-blue-yellow">
+				</div>
+				<div class="logo-mnp">
+					<span>supported by.</span>
+					<img src="assets/images/2022/logo-mnc-portal.png" alt="logo-mnc-portal">
+				</div>
+			</div>
+			<div class="warp-contact-footer">
+				<div class="mandiri-call">
+					<div class="wa-mandiri">
+						<i class="fab fa-whatsapp fa-fw"></i> MITA 0811841 4000 <br>
+						<a href="www.bankmandiri.co.id">www.bankmandiri.co.id</a>
+					</div>
+					<div class="telp-mandiri">
+						<i class="fas fa-phone-alt fa-fw"></i> mandiri call 14000
+					</div>
+				</div>
+				<div class="ojk">
+					<img src="assets/images/2022/OJK-dan-LPS.png" alt="OJK-dan-LPS">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Popup Message -->
+	<div class="popup-msg popup-success">
+		<div class="popup-msg-content">
+			<p>Data pendaftaran berhasil disubmit</p>
+
+			<div class="popup-msg-btn btn-close">
+				Tutup
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Message -->
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/plugin/datepicker/datepicker.js"></script>
+	<script src="assets/plugin/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/plugin/jquery.inputmask.bundle.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// hide drop profil if click outside menu
+			$(document).mouseup(function(e){
+				var menuDekstop = $('#nav-primary');
+				if (!menuDekstop.is(e.target)
+				&& menuDekstop.has(e.target).length === 0) 
+				{
+					$('.drop-profil').removeClass('drop-profil-show');
+				}
+			});
+
+			// pilih form
+			$('#kompetisi').change(function(){
+				var komp = $('#kompetisi option:selected').val();
+				$(".warp-form").addClass("hidden");
+				$("#"+komp).removeClass("hidden");
+				$('.warp-form-agree').removeClass("hidden");
+			});
+		});
+
+		// show or hide menu profil if avatar click
+		$('.avatar').click(function(){
+			$('.drop-profil').toggleClass('drop-profil-show');
+		});
+		
+		// close popup
+		$('.btn-close').click(function(){
+			$(".popup-success").removeClass('popup-msg-show');
+		});
+
+		// test submit
+		function checksubmit() {
+			$(".popup-success").addClass('popup-msg-show');
+			return false;
+		}
+
+		// / Only Number
+		function isNumberKey(evt) {
+			var charCode = (evt.which) ? evt.which : evt.keyCode;
+			if (charCode != 46 && charCode > 31 &&
+				(charCode < 48 || charCode > 57))
+				return false;
+			return true;
+		}
+
+		// Rupiah
+		$(".rupiah").inputmask({
+			alias: "currency",
+			prefix: '',
+			digits: 0
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,3193 @@
+.mobile {
+  display: none;
+}
+
+.nav-slide {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+/* Util */
+.title-section {
+  font-family: $poppins-semi;
+  font-size: 28px;
+  color: $color-purple;
+}
+
+.title-section-white {
+  font-family: $poppins-semi;
+  font-size: 28px;
+  color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// Popup
+.popup-msg {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all ease 0.2s;
+}
+
+.popup-msg-show {
+  display: block;
+}
+
+.popup-msg-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 528px;
+  padding: 40px 30px 30px;
+  border-radius: 4px;
+  color: #212121;
+  text-align: center;
+
+  p {
+    font-family: $poppins-med;
+    font-size: 16px;
+    margin: 27px 0px;
+  }
+
+  .popup-msg-btn {
+    font-family: $poppins-semi;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #61ba9e;
+    padding: 8px 53px;
+    text-align: center;
+    cursor: pointer;
+    width: max-content;
+    border-radius: 4px;
+    margin: auto;
+  }
+}
+
+.alert-empty-data {
+  font-family: $poppins-semi;
+  font-size: 18px;
+  color: #fff;
+  background-color: #f46a6a;
+  border-radius: 10px;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.popup-msg-content-finalis,
+.popup-msg-content-download {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 931px;
+  height: 515px;
+  padding: 10px;
+  border-radius: 30px;
+  color: #144774;
+  text-align: center;
+
+  background-image: url(../images/2022/bg-pop-1.png),
+    url(../images/2022/bg-pop-2.png), url(../images/2022/bg-pop-lamp.png),
+    url(../images/2022/bg-pop-3.png), url(../images/2022/bg-pop-4.png),
+    url(../images/2022/bg-pop.png);
+  background-position: 19% 27%, 90% 10%, 0% 70%, 3% 94%, 100% 90%, 0 0;
+  background-size: 700px, 171px, 70px, 270px, 250px, 100% 100%;
+  background-repeat: no-repeat;
+
+  .btn-close-finalis {
+    position: absolute;
+    top: -21px;
+    right: -18px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .title-konten-finalis {
+    font-family: "Boogaloo-Regular", Arial, Tahoma;
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 119px;
+    font-style: italic;
+    color: #fff;
+    padding: 0px 115px;
+
+    .ocean {
+      color: #58bbfc;
+    }
+
+    .white {
+      color: #fff;
+    }
+
+    .gold {
+      color: #fcd73b;
+    }
+  }
+
+  .title-konten-finalis-row {
+    width: 70%;
+    height: 200px;
+    margin-top: 114px;
+    line-height: 43px;
+    padding: 0px 55px;
+
+    .logo-livin {
+      width: 100px;
+      height: auto;
+      width: 100px;
+      height: auto;
+      margin: 0px 10px;
+      position: relative;
+      top: 14px;
+    }
+
+    .livin-sukha {
+      width: 160px;
+      height: auto;
+      margin: 0px 10px;
+      position: relative;
+      top: 6px;
+    }
+  }
+
+  .download-livin {
+    width: 30%;
+    height: 200px;
+    text-align: left;
+
+    img {
+      width: 200px;
+      height: auto;
+      margin: 85px 0px;
+    }
+  }
+
+  .desc-konten-finalis {
+    font-family: $poppins-med;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 10px;
+    color: #fff;
+    width: 100%;
+
+    img {
+      width: 200px;
+      position: relative;
+      top: 39px;
+      left: 18px;
+      cursor: pointer;
+    }
+  }
+
+  .tag-finalis {
+    margin-top: 95px;
+    font-family: "Vividly-Regular", arial, tahoma;
+    font-size: 23px;
+    color: #f8d74f;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px #000000;
+    margin-left: -45px;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+}
+
+.popup-msg-content-download {
+  background-image: url(../images/2022/bg-pop-1.png),
+    url(../images/2022/bg-pop-2.png), url(../images/2022/bg-pop-lamp.png),
+    url(../images/2022/bg-pop-3.png), url(../images/2022/finalis-right-2.png),
+    url(../images/2022/bg-pop.png);
+  background-position: 19% 27%, 52% 71%, 0% 70%, 3% 94%, 100% 93%, 0 0;
+  background-size: 700px, 171px, 70px, 270px, 275px, 100% 100%;
+  background-repeat: no-repeat;
+
+  .tag-finalis {
+    margin-top: 105px;
+  }
+}
+
+/* Home */
+.home {
+  padding: 125px 0px 0px;
+  background-image: url(../images/2022/bumn-white.png),
+    url(../images/2022/mandiri-white.png), url(../images/2022/bg-home.png);
+  background-position: 6% 45px, 92% 30px, 0px 0px;
+  background-size: 180px, 180px, 100% 100%;
+  background-repeat: no-repeat;
+
+  .logo-home {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  .warp-desc-home {
+    width: 50%;
+    margin-top: 100px;
+
+    img {
+      width: 400px;
+    }
+
+    .desc-home,
+    .date-home,
+    .social-home {
+      padding: 30px 0px 10px;
+      font-family: $poppins-regular;
+      color: #fff;
+    }
+
+    .desc-home {
+      font-size: 20px;
+    }
+
+    .social-home {
+      a {
+        color: #fff;
+
+        &:hover i {
+          background-color: #ff48d4;
+          color: #fff;
+        }
+      }
+
+      i {
+        color: #2bb2f0;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        border-radius: 50px;
+        font-size: 25px;
+        text-align: center;
+        padding: 5px 0px;
+        position: relative;
+        top: 4px;
+        margin-right: 10px;
+        transition: $trans-hover;
+      }
+    }
+
+    .tag-home {
+      margin: 30px 0px;
+      font-family: $poppins-semi;
+      font-size: 30px;
+    }
+
+    .btn-g-login {
+      margin-bottom: 40px;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    .btn-home {
+      img {
+        width: 210px;
+        margin: 30px 0px -10px;
+        transition: $trans-hover;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    .date-home {
+      font-size: 16px;
+    }
+  }
+}
+
+
+/* Jadwal */
+
+#about {
+  margin-top: -15px;
+}
+
+.grupdate {
+	margin-left: -6px;
+  .date-info {
+    display: flex;
+  }
+}
+
+.grupperformance {
+	.grupartis {
+		display: flex;
+		margin-bottom: 8px;
+    position: relative;
+    &::before {
+      content: "";
+      border-top: dashed 3px green;
+      width: 100%;
+      position: absolute;
+      top: -24px;
+    }
+	}
+  .grupartis.before-none {
+    &::before {
+      display: none;
+    }
+  }
+	.gruprundown {
+		display: flex;
+	}
+}
+
+.big-container {
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-day1 {
+	z-index: 9;
+	img {
+		width: 60px;
+	}
+}
+
+.container-date {
+  display: flex;
+  align-items: center;
+}
+
+.garis-bawah {
+  background-color: #316fea;
+  height: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.jadwal {
+  padding: 20px 0px;
+  background: #316fea;
+  background-image: url(../images/bottom-left.png), url(../images/Rocket.png);
+  background-position: 36px 111%, 886px 115%;
+  background-size: 306px 270px, 373px 314px;
+  background-repeat: no-repeat;
+  .container-jadwal {
+    .title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .title-jadwal {
+        display: flex;
+
+        .logo-jadwal {
+          img {
+            margin-top: 38px;
+            margin-right: 10px;
+          }
+        }
+
+        .nama-jadwal {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 37px;
+          line-height: 45px;
+          margin-top: 40px;
+          margin-right: 25px;
+          color: #fff;
+          font-style: italic;
+          text-align: center;
+        }
+      }
+
+      .title-lokasi {
+        display: flex;
+
+        .logo-lokasi {
+          img {
+            margin-top: 38px;
+            margin-right: -27px;
+          }
+        }
+
+        .nama-lokasi {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 37px;
+          line-height: 45px;
+          margin-top: 40px;
+          margin-left: 30px;
+          color: #fff;
+          font-style: italic;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .pink {
+    position: relative;
+    font-family: "Poppins-bold", Arial, Tahomaa;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #fd4fd2;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    padding: 2px 25px;
+
+    &:after {
+      content: "";
+      background: url("../images/2022/fest-btn-glow.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+    }
+  }
+  .orange {
+    position: relative;
+    font-family: "Poppins-bold", Arial, Tahomaa;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #f9805d;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    padding: 2px 25px;
+
+    &:after {
+      content: "";
+      background: url("../images/2022/fest-btn-glow.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+    }
+  }
+  .rowndown {
+    margin-right: 5px;
+    position: relative;
+    font-family: "Poppins-bold", Arial, Tahomaa;
+    font-size: 16px;
+    color: #008b8b;
+    text-align: center;
+    background-color: #fefd55;
+    border-radius: 50px;
+    border: 2px solid #333130;
+    padding: 2px 25px;
+
+    &:after {
+      content: "";
+      background: url("../images/fest-btn-glow-blue.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+    }
+  }
+  .bulan {
+    font-family: "Boogaloo-Regular", Arial, Tahoma;
+    font-size: 28px;
+    line-height: 45px;
+    margin-top: -5px;
+    margin-right: 5px;
+    color: #f9805d;
+  }
+  .container-jadwal-center {
+
+    .garis-putus {
+      padding-left: 233px;
+    }
+
+    .day1-container {
+      margin-top: 30px;
+      width: 100%;
+
+      .day1-row1 {
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 10px;
+		align-items: center;
+
+        .date1-label {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 44px;
+          line-height: 45px;
+          margin-top: 5px;
+          margin-right: 5px;
+          color: #fff;
+          font-style: italic;
+          text-align: center;
+        }
+
+        .circle {
+          margin-top: 15px;
+        }
+
+        .tgl1-label {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 54px;
+          line-height: 45px;
+          margin-top: 5px;
+          margin-right: 19px;
+          color: rgb(118, 222, 241);
+          font-style: italic;
+          text-align: center;
+        }
+      }
+
+      .day1-row2 {
+        flex-wrap: wrap;
+        display: flex;
+
+        // .bulan {
+        // 	font-family: "Boogaloo-Regular", Arial, Tahoma;
+        // 	font-size: 33px;
+        // 	line-height: 45px;
+        // 	margin-top: -5px;
+        // 	margin-right: 20px;
+        // 	margin-left: 77px;
+        // 	color: #f9805d;
+        // 	text-align: center;
+        // }
+
+        // .rowdown1 {
+        // 	margin-right: 5px;
+        // 	position: relative;
+        // 	font-family: "Poppins-bold", Arial, Tahomaa;
+        // 	font-size: 18px;
+        // 	color: #008B8B;
+        // 	text-align: center;
+        // 	background-color: #fefd55;
+        // 	border-radius: 50px;
+        // 	border: 2px solid #333130;
+        // 	padding: 2px 25px;
+
+        // 	&:after {
+        // 		content: "";
+        // 		background: url("../images/fest-btn-glow-blue.png");
+        // 		background-repeat: no-repeat;
+        // 		background-size: 100%;
+        // 		width: 15px;
+        // 		height: 25px;
+        // 		position: absolute;
+        // 		top: 5px;
+        // 		left: 4px;
+        // 	}
+        // }
+      }
+    }
+
+    .day2-container {
+      margin-top: 45px;
+      width: 100%;
+
+      .day2-row1 {
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 10px;
+		align-items: center;
+
+
+        .date1-label {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 44px;
+          line-height: 45px;
+          margin-top: 5px;
+          margin-right: 5px;
+          color: #fff;
+          font-style: italic;
+          text-align: center;
+        }
+
+        .circle {
+          margin-top: 15px;
+        }
+
+        .tgl1-label {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 54px;
+          line-height: 45px;
+          margin-top: 5px;
+          margin-right: 16px;
+          color: rgb(118, 222, 241);
+          font-style: italic;
+          text-align: center;
+        }
+      }
+
+      .day2-row2 {
+        flex-wrap: wrap;
+        display: flex;
+
+        // .bulan {
+        // 	font-family: "Boogaloo-Regular", Arial, Tahoma;
+        // 	font-size: 33px;
+        // 	line-height: 45px;
+        // 	margin-top: -5px;
+        // 	margin-right: 20px;
+        // 	margin-left: 77px;
+        // 	color: #f9805d;
+        // 	text-align: center;
+        // }
+
+        // .rowdown2 {
+        // 	margin-right: 5px;
+        // 	position: relative;
+        // 	font-family: "Poppins-bold", Arial, Tahomaa;
+        // 	font-size: 18px;
+        // 	color: #008B8B;
+        // 	text-align: center;
+        // 	background-color: #fefd55;
+        // 	border-radius: 50px;
+        // 	border: 2px solid #333130;
+        // 	padding: 2px 25px;
+
+        // 	&:after {
+        // 		content: "";
+        // 		background: url("../images/fest-btn-glow-blue.png");
+        // 		background-repeat: no-repeat;
+        // 		background-size: 100%;
+        // 		width: 15px;
+        // 		height: 25px;
+        // 		position: absolute;
+        // 		top: 5px;
+        // 		left: 4px;
+        // 	}
+        // }
+      }
+    }
+
+    .day3-container {
+      margin-top: 45px;
+      width: 100%;
+
+      .day3-row1 {
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 10px;
+		align-items: center;
+
+        .date1-label {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 44px;
+          line-height: 45px;
+          margin-top: 5px;
+          margin-right: 5px;
+          color: #fff;
+          font-style: italic;
+          text-align: center;
+        }
+
+        .circle {
+          margin-top: 15px;
+        }
+
+        .tgl1-label {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 54px;
+          line-height: 45px;
+          margin-top: 5px;
+          margin-right: 7px;
+          color: rgb(118, 222, 241);
+          font-style: italic;
+          text-align: center;
+        }
+      }
+
+      .day3-row2 {
+        flex-wrap: wrap;
+        display: flex;
+
+        // .bulan {
+        // 	font-family: "Boogaloo-Regular", Arial, Tahoma;
+        // 	font-size: 33px;
+        // 	line-height: 45px;
+        // 	margin-top: -5px;
+        // 	margin-right: 20px;
+        // 	margin-left: 77px;
+        // 	color: #f9805d;
+        // 	text-align: center;
+        // }
+
+        // .rowdown3 {
+        // 	margin-right: 5px;
+        // 	position: relative;
+        // 	font-family: "Poppins-bold", Arial, Tahomaa;
+        // 	font-size: 18px;
+        // 	color: #008B8B;
+        // 	text-align: center;
+        // 	background-color: #fefd55;
+        // 	border-radius: 50px;
+        // 	border: 2px solid #333130;
+        // 	padding: 2px 25px;
+
+        // 	&:after {
+        // 		content: "";
+        // 		background: url("../images/fest-btn-glow-blue.png");
+        // 		background-repeat: no-repeat;
+        // 		background-size: 100%;
+        // 		width: 15px;
+        // 		height: 25px;
+        // 		position: absolute;
+        // 		top: 5px;
+        // 		left: 4px;
+        // 	}
+        // }
+      }
+    }
+  }
+  .title-asset-bottom-center1 {
+    font-family: "Poppins-bold", Arial, Tahomaa;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 120%;
+    margin: 44px 0px 10px;
+  }
+  .title-asset-bottom-center2 {
+    font-family: "Vividly-Regular", Arial, Tahoma;
+    font-size: 27px;
+    color: #fefd55;
+    text-align: center;
+    line-height: 120%;
+    margin: -10px 0px 10px;
+  }
+  .logo-LS {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .logo_LS {
+      text-align: center;
+      margin-right: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .LS {
+      a {
+        color: #fff !important;
+        font-family: "Vividly-Regular", Arial, Tahoma;
+        font-size: 30px;
+        text-align: center;
+        background-color: #dd5e6e;
+        border-radius: 50px;
+        padding: 6px 17px;
+      }
+    }
+  }
+
+  .asset-bottom-center {
+    justify-content: center;
+    .tag-container {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+/* About */
+.about {
+  padding: 60px 0px;
+  background: #f3efee;
+  background-image: url(../images/2022/illustration-awan-biru.png),
+    url(../images/2022/Illustration-Monas.png);
+  background-position: 0 50%, 100% 100%;
+  background-size: 230px, 260px;
+  background-repeat: no-repeat;
+
+  .desc-about {
+    font-family: $poppins-med;
+    font-size: 16px;
+    color: #005591;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0px 250px;
+  }
+
+  .about-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .logo-livin-about {
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid #d9d9d9;
+
+    img {
+      width: auto;
+      height: 50px;
+    }
+  }
+
+  .logo-kopra-about {
+    img {
+      width: auto;
+      height: 50px;
+    }
+  }
+}
+
+/* Flow */
+.flow {
+  padding: 60px 0px;
+  background-image: url(../images/2022/bg-pink.png);
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.tab {
+  overflow: hidden;
+  margin-top: 30px;
+
+  .tab-existing,
+  .tab-plan {
+    font-family: $poppins-semi;
+    font-size: 22px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .tab-existing {
+    background-color: #fce210;
+    color: #1a527e;
+  }
+
+  .tab-plan {
+    background-color: #1b90e9;
+    color: #fff;
+  }
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: 0.3s;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.tab-c-plan {
+  background-color: #1b90e9;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.tab-c-existing {
+  background-color: #fce210;
+  border-radius: 0px 10px 10px 10px;
+}
+
+/* Information */
+.information {
+  padding: 70px 0px 110px;
+  background-image: url(../images/2022/bg-pink.png);
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  .warp-information {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -8px 0px;
+  }
+
+  .list-information {
+    width: 33.33%;
+    padding: 0px 8px;
+  }
+
+  .img-information {
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .btn-information {
+      position: absolute;
+      bottom: -40px;
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 250px;
+        height: auto;
+        transition: ease all 0.3s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+/* Testimoni */
+.testimoni {
+  padding: 60px 0px;
+  position: relative;
+  background: #2ea2ce;
+  background-image: url(../images/2022/Illustration-Gerobak-Livin.png),
+    url(../images/2022/Illustration-Laptop-Kopra-WMM.png);
+  background-position: 0px 100%, 100% 40px;
+  background-size: 310px, 230px;
+  background-repeat: no-repeat;
+
+  .contain-testimony {
+    padding: 0px 106px;
+  }
+
+  .swiper-slide {
+    width: 386px !important;
+  }
+
+  .testi-prev,
+  .testi-next {
+    position: absolute;
+    top: 500px;
+    z-index: 80;
+    cursor: pointer;
+
+    img {
+      width: 70px;
+      opacity: 1;
+      transition: $trans-hover;
+    }
+
+    &:hover,
+    &:focus {
+      img {
+        width: 70px;
+        opacity: 1;
+      }
+    }
+  }
+
+  .testi-prev {
+    left: 185px;
+  }
+
+  .testi-next {
+    right: 185px;
+  }
+
+  .list-testimoni {
+    margin-top: 60px;
+    width: 385px !important;
+    height: 950px !important;
+    border-radius: 20px;
+    padding: 46px 20px 26px;
+    text-align: center;
+    position: relative;
+    background: #fdd807 !important;
+  }
+
+  .img-alumni {
+    margin-bottom: 16px;
+
+    img {
+      width: 139px;
+      height: 139px;
+      border-radius: 50%;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .nama-alumni {
+    font-family: $poppins-semi;
+    font-size: 22px;
+    color: #005591;
+  }
+
+  .tahun-alumni {
+    font-family: $poppins-regular;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #005591;
+  }
+
+  .testi-alumni {
+    font-family: $poppins-regular;
+    font-size: 14px;
+    color: #005591;
+    margin-top: 16px;
+  }
+
+  .warp-logo {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    display: block;
+    left: 0px;
+    bottom: 26px;
+
+    .title-logo {
+      font-family: $poppins-semi;
+      font-size: 19px;
+      color: #005591;
+      margin-bottom: 21px;
+    }
+
+    .logo {
+      img {
+        width: 96px;
+        height: 96px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+/* Registration */
+.registrasi {
+  padding: 60px 0px;
+  background: #0d4c81;
+
+  .title-registrasi {
+    font-family: "Poppins-semi", Arial, Tahoma;
+    font-size: 32px;
+    color: #fff;
+    margin: 50px 0px 38px;
+    text-align: center;
+  }
+
+  .warp-category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-category {
+    width: 33.33%;
+    padding: 0px 20px;
+
+    img {
+      max-width: 100%;
+      height: 210px;
+      margin: auto;
+      display: block;
+    }
+
+    .btn-category {
+      border: none;
+      font-family: $poppins-semi;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      padding: 10px 25px;
+      border-radius: 10px;
+      background-color: #1a90e8;
+      transition: ease all 0.4s;
+      display: block;
+      width: 100%;
+      margin: 24px auto;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #eccf11;
+      }
+    }
+  }
+
+  .desc-category {
+    font-family: $poppins-med;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+}
+
+/* Category Login */
+.category-login {
+  background: #0155a3;
+  padding: 87px 0px 200px;
+  text-align: center;
+
+  .img-category {
+    width: 208px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .title-category {
+    font-family: $poppins-regular;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  .desc-category {
+    font-family: $poppins-regular;
+    font-size: 16px;
+    color: #fff;
+    width: 62%;
+    margin: auto;
+  }
+}
+
+.warp-login-google {
+  margin-top: 60px;
+
+  .desc-login-google {
+    font-family: $poppins-regular;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .btn-google {
+    width: max-content;
+    position: relative;
+    top: 10px;
+    margin: 24px auto;
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Form Data */
+.form-data {
+  padding: 87px 0px 200px;
+  background: #0155a3;
+  background-image: url(../images/2022/form-kiri.png),
+    url(../images/2022/form-kanan.png);
+  background-position: 0px 100%, 100% 100%;
+  background-size: 300px, 400px;
+  background-repeat: no-repeat;
+
+  .frm-error {
+    border: 3px solid #ff1144 !important;
+  }
+
+  .title-form {
+    font-family: $poppins-bold;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .warp-form,
+  .warp-form-table,
+  .warp-form-agree {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+  }
+
+  .warp-form {
+    padding: 50px 80px;
+  }
+
+  .warp-form-agree {
+    margin-top: 20px;
+    padding: 50px 80px;
+  }
+
+  .warp-form-table {
+    padding: 50px 10px;
+  }
+
+  .note-form {
+    width: 100%;
+    font-family: $poppins-med-italic;
+    font-size: 16px;
+    color: #ff1144;
+    margin-bottom: 8px;
+  }
+
+  .note-label {
+    display: block;
+    width: 100%;
+    font-family: $poppins-regular;
+    font-size: 14px;
+    color: #ff1144;
+    margin-bottom: 8px;
+  }
+
+  .label {
+    font-family: $poppins-med;
+    font-size: 18px;
+    color: #005591;
+    padding-right: 2px;
+    width: 215px;
+  }
+
+  .required {
+    font-family: $poppins-med;
+    font-size: 18px;
+    color: #ff1144;
+  }
+
+  .label-ket {
+    font-family: $poppins-med;
+    font-size: 14px;
+    color: #005591;
+    padding-left: 10px;
+    width: 40%;
+  }
+
+  .label-ket.width-auto {
+    width: auto;
+  }
+
+  .label-panduan {
+    margin-top: 0px;
+  }
+
+  .sparate {
+    font-family: $poppins-med;
+    font-size: 18px;
+    color: #005591;
+    width: 10px;
+  }
+
+  .frm-input-group-label {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 215px - 10px - 40%);
+  }
+
+  .frm-input-group-span {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    .input {
+      width: 70% !important;
+    }
+
+    label {
+      font-family: $poppins-med;
+      font-size: 18px;
+      color: #005591;
+      padding-left: 10px;
+      width: 30% !important;
+    }
+  }
+
+  .frm-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 215px - 10px);
+  }
+
+  .frm-input-group.width-3 {
+    width: calc(33.3% - 75px);
+
+    i {
+      font-size: 35px;
+      position: relative;
+      top: 1px;
+    }
+
+    input {
+      width: calc(100% - 44px);
+    }
+  }
+
+  .frm-input-group-label-icon {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 215px - 10px);
+
+    .label-rp {
+      font-family: $poppins-med;
+      font-size: 18px;
+      color: #005591;
+      padding-left: 10px;
+      width: 55px;
+    }
+
+    .input {
+      width: calc(100% - 55px) !important;
+    }
+  }
+
+  // Radio
+  .radio-btn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #005591;
+    font-family: $poppins-med;
+    font-size: 18px;
+  }
+
+  .radio-btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+  }
+
+  .radio-btn:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .radio-btn input:checked ~ .checkmark {
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .radio-btn input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .radio-btn .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #005591;
+  }
+
+  // Check Box
+  .warp-produk {
+    width: 50%;
+  }
+
+  .frm-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .warp-checkbox {
+    position: relative;
+    margin-bottom: 15px;
+    width: 34px;
+  }
+
+  .warp-checkbox label {
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .warp-checkbox label:after {
+    border: 2px solid #0e6ead;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 10px;
+    left: 6px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 19px;
+  }
+
+  .label-checkbox {
+    font-family: $poppins-med;
+    font-size: 18px;
+    color: #005591;
+    padding-left: 10px;
+    width: calc(100% - 34px);
+  }
+
+  .warp-checkbox input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .warp-checkbox input[type="checkbox"]:checked + label {
+    background-color: #fff;
+    border-color: #c4c4c4;
+  }
+
+  .warp-checkbox input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+  // cmb kategori
+  .warp-cmb-kategori {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -4px;
+  }
+
+  .form-group-cmb-lg {
+    width: 30%;
+    padding: 0px 4px;
+  }
+
+  .form-group-cmb-md {
+    width: 35%;
+    padding: 0px 4px;
+  }
+
+  .cmb-kategori {
+    border-radius: 10px;
+    border: 1px solid #61ba9e;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background: url(../images/icon/chevron-down.svg) no-repeat right #61ba9e;
+    background-position-x: right;
+    background-origin: content-box;
+    background-position-y: center;
+    background-size: 20px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-bottom: 36px;
+    outline: none;
+  }
+
+  ::placeholder {
+    color: #d2d2d2;
+    opacity: 1;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d2d2d2;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #d2d2d2;
+  }
+
+  .input {
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+    font-family: $poppins-regular;
+    font-size: 15px;
+    background-color: #f9f8f2;
+    color: #000;
+    padding: 5px 10px;
+    transition: $trans-hover;
+    width: 100%;
+    height: 38px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:placeholder {
+      color: #f9f8f2;
+    }
+  }
+
+  .input.width-2 {
+    width: calc(50% - 12px);
+  }
+
+  .input-picker {
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+    font-family: $poppins-regular;
+    font-size: 15px;
+    background-color: #f9f8f2;
+    color: #000;
+    padding: 5px 10px;
+    transition: $trans-hover;
+    width: 100%;
+    height: 38px;
+    margin-left: 0px;
+    background: url("../images/icon/calender.svg") no-repeat right #f9f8f2;
+    background-size: 15px;
+    background-position-x: 97%;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .cmb-box {
+    border-radius: 10px;
+    border: 1px solid #c6c6c6;
+    padding: 5px 6px;
+    font-family: $poppins-regular;
+    background-color: #f9f8f2 !important;
+    font-size: 15px;
+    width: 100%;
+    height: 38px;
+    color: #000;
+    background: url("../images/icon/chevron-down-blue.svg") no-repeat right;
+    background-position-x: 98%;
+    background-origin: content-box;
+    background-position-y: center;
+    background-size: 15px;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .cmb-box.width-2 {
+    width: calc(100% - 74px - 15px);
+    margin-right: 15px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #c6c6c6;
+    border-radius: 10px;
+    font-family: $poppins-regular;
+    font-size: 16px;
+    background-color: #f9f8f2;
+    color: #000;
+    padding: 5px 10px;
+    transition: $trans-hover;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-primary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:placeholder {
+      color: #f4f4f4;
+    }
+  }
+
+  .link-form {
+    font-family: $poppins-regular;
+    font-size: 15px;
+    background-color: #61ba9e;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .form-group-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .form-group-double {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    width: 50%;
+  }
+
+  .form-group-label {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .persetujuan {
+    font-family: $poppins-med;
+    font-size: 18px;
+    color: #005591;
+    margin: 0px 0px 47px;
+  }
+
+  .warp-captcha {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .captcha {
+    margin-left: 10px;
+
+    img {
+      width: 234px;
+    }
+  }
+
+  .syarat-ketentuan {
+    font-family: $poppins-semi;
+    font-size: 24px;
+    color: #fff;
+    background-color: #6761ba;
+    padding: 13px 26px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .warp-submit {
+    width: 100%;
+
+    .warp-checkbox {
+      position: relative;
+      width: 34px;
+    }
+
+    .warp-checkbox label {
+      background-color: #fff;
+      border: 1px solid #c4c4c4;
+      cursor: pointer;
+      height: 34px;
+      width: 34px;
+      left: 0;
+      position: absolute;
+      top: 2px;
+    }
+
+    .warp-checkbox label:after {
+      border: 2px solid #0e6ead;
+      border-top: none;
+      border-right: none;
+      content: "";
+      height: 10px;
+      left: 6px;
+      opacity: 0;
+      position: absolute;
+      top: 8px;
+      transform: rotate(-45deg);
+      width: 19px;
+    }
+
+    .label-checkbox {
+      font-family: $poppins-med;
+      font-size: 20px;
+      color: #005591;
+      width: calc(100% - 34px);
+    }
+
+    .warp-checkbox input[type="checkbox"] {
+      visibility: hidden;
+    }
+
+    .warp-checkbox input[type="checkbox"]:checked + label {
+      background-color: #fff;
+      border-color: #c4c4c4;
+    }
+
+    .warp-checkbox input[type="checkbox"]:checked + label:after {
+      opacity: 1;
+    }
+  }
+
+  .btn-submit {
+    border: none;
+    font-family: $poppins-semi;
+    font-size: 24px;
+    color: #fff;
+    background-color: #61ba9e;
+    padding: 13px 78px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 60px auto 0px;
+  }
+
+  /* Table */
+  .table-dashboard-d {
+    width: 100%;
+  }
+
+  .table-dashboard {
+    font-family: $poppins-regular;
+    border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #0155a3;
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    tr {
+      font-size: 14px;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  .btn-grup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #556ee6;
+    text-align: center;
+    display: block;
+    margin: 0px 2px;
+    cursor: pointer;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    background-color: #556ee6;
+  }
+
+  .btn-delete {
+    background-color: #f46a6a;
+  }
+}
+
+/* Finalis */
+.header-finalis {
+  background: #ffb246;
+  background-image: url(../images/2022/bg-finalis-top.png);
+  background-position: 50% 100%;
+  background-size: 95% 85%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60px;
+}
+
+.bottom-finalis {
+  background: #ffb246;
+  background-image: url(../images/2022/bg-finalis-bottom.png);
+  background-position: 50% 0%;
+  background-size: 95% 85%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60px;
+}
+
+// Golden Tiket
+.golden-tiket {
+  padding: 00px 200px 300px;
+  background: #ffb246;
+  background-image: url(../images/2022/awan-1.png),
+    url(../images/2022/awan-2.png), url(../images/2022/awan-3.png),
+    url(../images/2022/awan-4.png), url(../images/2022/finalis-left.png),
+    url(../images/2022/finalis-right.png),
+    url(../images/2022/bg-finalis-bottom.png),
+    url(../images/2022/bg-finalis.png);
+  background-position: 92% 20%, 8% 40%, 92% 60%, 8% 74%, 0% 100%, 100% 100%,
+    50% 100%, 50% 0%;
+  // 92% 20%, 8% 40%, 92% 60%, 8% 74%, 50% 50%;
+  background-size: 180px, 180px, 180px, 180px, 470px, 400px, 96% 80px, 95% 100%;
+  // 180px, 180px, 180px, 180px, 95% 100%;
+  background-repeat: no-repeat;
+
+  .warp-header {
+    display: flex;
+    flex-wrap: wrap;
+
+    .logo-bumn {
+      width: 50%;
+      padding: 15px 0px;
+
+      img {
+        width: auto;
+        height: 30px;
+      }
+    }
+
+    .logo-mandiri-finalis {
+      width: 50%;
+      text-align: right;
+
+      img {
+        width: auto;
+        height: 45px;
+      }
+    }
+  }
+
+  .warp-content {
+    padding: 0px 0px;
+
+    .greeting {
+      font-family: "Boogaloo-Regular", Arial, Tahoma;
+      font-size: 48px;
+      line-height: 55px;
+      margin-top: 40px;
+      color: #e435b8;
+      font-style: italic;
+      text-align: center;
+
+      .ocean {
+        color: #58bbfc;
+      }
+
+      .white {
+        color: #fff;
+      }
+
+      .blue {
+        color: #144774;
+      }
+    }
+
+    .desc-greeting {
+      font-family: $poppins-med;
+      font-size: 17px;
+      line-height: 28px;
+      margin-top: 20px;
+      color: #144774;
+      padding: 0px 60px;
+      text-align: center;
+    }
+  }
+
+  .kategori-finalis {
+    font-family: "Boogaloo-Regular", Arial, Tahoma;
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 40px;
+    color: #e435b8;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 17px;
+  }
+
+  .warp-table-finalis {
+    margin-bottom: 60px;
+
+    .title-kategori {
+      width: 290px;
+      height: 60px;
+      background-image: url(../images/2022/btn-finalis.png);
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+
+      font-family: $poppins-med;
+      font-size: 22px;
+      color: #0098ef;
+      text-align: center;
+      padding: 9px 25px;
+      margin: auto;
+    }
+
+    .table-finalis-top {
+      background-image: url(../images/2022/finalis-table-top.png);
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 30px;
+      margin-top: 20px;
+    }
+
+    .table-finalis-bottom {
+      background-image: url(../images/2022/finalis-table-bottom.png);
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .table-finalis,
+    .table-finalis-xs {
+      width: 100%;
+      height: auto;
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+      padding: 0px 20px;
+
+      table {
+        width: 100%;
+        color: #ff14c7;
+        background: #fff;
+        border-radius: 20px;
+        border-collapse: separate;
+        border-spacing: 0;
+
+        th {
+          font-family: $poppins-regular;
+          font-size: 22px;
+          text-align: center;
+        }
+
+        thead tr th,
+        tbody tr td {
+          border-right: 1px solid #ffb246;
+          padding: 10px;
+          width: 50%;
+          text-align: center;
+        }
+
+        thead tr th {
+          border-bottom: 4px solid #ffb246;
+        }
+
+        tbody tr td {
+          border-bottom: 1px solid #ffb246;
+        }
+
+        tbody tr td {
+          ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0px;
+          }
+
+          li {
+            text-align: center;
+            display: inline-block;
+
+            span {
+              width: auto;
+              margin: 0px;
+              top: -10px;
+              position: relative;
+            }
+          }
+        }
+
+        tbody tr.winner {
+          color: #fff;
+          padding: 0px;
+
+          td.win-left {
+            background: #ff14c7;
+            border-bottom-left-radius: 20px;
+          }
+
+          td.win-right {
+            background: #ff14c7;
+            border-bottom-right-radius: 20px;
+          }
+
+          td.win {
+            background: #ff14c7;
+          }
+
+          td {
+            position: relative;
+          }
+        }
+
+        .peserta-win {
+          margin-left: -50px;
+        }
+
+        .golden-ticket {
+          width: 62px;
+          height: 47px;
+          background-image: url(../images/2022/icon_goldentiket-1.png);
+          background-position: 0px 0px;
+          background-size: 100% 100%;
+          position: absolute;
+          top: -27px;
+          left: 13px;
+          transform: rotate(-25deg);
+        }
+
+        .golden-ticket-inline {
+          width: 46px;
+          height: 36px;
+          background-image: url(../images/2022/icon_goldentiket-1.png);
+          background-position: 0px 0px;
+          background-size: 100% 100%;
+          position: relative;
+          top: -1px;
+          transform: rotate(-25deg);
+          display: inline-block;
+          vertical-align: middle;
+          float: left;
+        }
+
+        tr:first-child th:first-child {
+          border-top-left-radius: 20px;
+        }
+
+        tr th:first-child,
+        tr td:first-child {
+          border-left: 1px solid #ffb246;
+        }
+      }
+    }
+
+    .table-finalis {
+      background-image: url(../images/2022/finalis-table.png);
+    }
+
+    .table-finalis-xs {
+      background-image: url(../images/2022/finalis-table-sm.png);
+    }
+  }
+
+  .bgl {
+    font-family: "Boogaloo-Regular", Arial, Tahoma;
+    font-size: 38px;
+    font-style: italic;
+    color: #e435b8;
+  }
+
+  .warp-histori-finalis {
+    margin: 20px -55px;
+    text-align: center;
+
+    .title-kat-histori {
+      font-family: $poppins-bold;
+      font-size: 17px;
+      color: #144774;
+      margin-bottom: 20px;
+    }
+
+    .warp-btn-histori-finalis {
+      display: flex;
+      width: 95%;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .btn-histori-finalis,
+    .btn-histori-finalis-golden,
+    .btn-histori-finalis-win {
+      margin: 0px 5px;
+
+      a {
+        background-position: 0px 0px;
+        background-size: 100% 100%;
+        font-family: $poppins-bold;
+        font-size: 21px;
+        color: #359edd;
+        text-align: center;
+      }
+    }
+
+    .disable {
+      opacity: 0.4;
+    }
+
+    .btn-histori-finalis {
+      a {
+        display: block;
+        padding: 9px;
+        width: 140px;
+        height: 55px;
+        background-image: url(../images/2022/btn-histori.png);
+      }
+    }
+
+    .btn-histori-finalis-golden {
+      a {
+        display: block;
+        position: relative;
+        top: -8px;
+        width: 160px;
+        height: 73px;
+        background-image: url(../images/2022/btn-histori-golden.png);
+      }
+    }
+
+    .btn-histori-finalis-win {
+      a {
+        display: block;
+        width: 270px;
+        height: 55px;
+        background-image: url(../images/2022/btn-histori-win.png);
+      }
+    }
+  }
+}
+
+.best-golden-tiket {
+  padding: 60px 200px 80px;
+  background: #2371ee;
+  background-image: url(../images/2022/fire-mid.png),
+    url(../images/2022/fire-bottom.png), url(../images/2022/finalis-right-t.png),
+    url(../images/2022/finalis-center-t.png);
+  background-position: 5% 100%, 98% 30%, 95% 150%, 50% 50%;
+  background-size: 180px, 180px, 300px, 100%;
+  background-repeat: no-repeat;
+
+  .greeting {
+    font-family: "Boogaloo-Regular", Arial, Tahoma;
+    font-size: 48px;
+    line-height: 55px;
+    margin-top: 40px;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+
+    .gold {
+      color: #ffd800;
+    }
+  }
+
+  .warp-header {
+    display: flex;
+    flex-wrap: wrap;
+
+    .logo-bumn {
+      width: 50%;
+      padding: 15px 0px;
+
+      img {
+        width: auto;
+        height: 30px;
+      }
+    }
+
+    .logo-mandiri-finalis {
+      width: 50%;
+      text-align: right;
+
+      img {
+        width: auto;
+        height: 45px;
+      }
+    }
+  }
+}
+
+.best-golden-footer {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #ffb246;
+}
+
+/* Finalis */
+.finalis {
+  padding: 50px 200px 300px;
+  background: #2270ed;
+  background-image: url(../images/2022/awan-5.png),
+    url(../images/2022/finalis-right-t.png),
+    url(../images/2022/finalis-center-t.png),
+    url(../images/2022/fire-bottom.png), url(../images/2022/awan-2.png),
+    url(../images/2022/awan-3.png), url(../images/2022/awan-4.png),
+    url(../images/2022/finalis-left.png), url(../images/2022/finalis-right.png),
+    url(../images/2022/finalis-center-b.png);
+  background-position: 10% 12%, 90% 10%, 50% 0, 92% 20%, 8% 40%, 92% 60%, 8% 74%,
+    0% 100%, 100% 100%, 50% 98%;
+  background-size: 200px, 300px, 1200px, 180px, 180px, 180px, 180px, 470px,
+    400px, 300px;
+  background-repeat: no-repeat;
+
+  .warp-header {
+    display: flex;
+    flex-wrap: wrap;
+
+    .logo-bumn {
+      width: 50%;
+      padding: 15px 0px;
+
+      img {
+        width: auto;
+        height: 30px;
+      }
+    }
+
+    .logo-mandiri-finalis {
+      width: 50%;
+      text-align: right;
+
+      img {
+        width: auto;
+        height: 45px;
+      }
+    }
+  }
+
+  .warp-content {
+    padding: 0px 0px;
+
+    .greeting {
+      font-family: "Boogaloo-Regular", Arial, Tahoma;
+      font-size: 37px;
+      line-height: 45px;
+      margin-top: 40px;
+      color: #ffff;
+      font-style: italic;
+      text-align: center;
+
+      .ocean {
+        color: #58bbfc;
+      }
+
+      .blue {
+        color: #144774;
+      }
+
+      .gxl {
+        font-size: 45px;
+      }
+    }
+
+    .desc-greeting {
+      font-family: $poppins-med;
+      font-size: 17px;
+      line-height: 28px;
+      margin-top: 40px;
+      color: #fff;
+      padding: 0px 60px;
+      text-align: center;
+    }
+  }
+
+  .kategori-finalis {
+    font-family: "Boogaloo-Regular", Arial, Tahoma;
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 0px;
+    color: #e435b8;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 17px;
+  }
+
+  .warp-table-finalis {
+    margin-bottom: 60px;
+
+    .title-kategori {
+      width: 290px;
+      height: 60px;
+      background-image: url(../images/2022/btn-finalis.png);
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+
+      font-family: $poppins-med;
+      font-size: 22px;
+      color: #0098ef;
+      text-align: center;
+      padding: 9px 25px;
+      margin: auto;
+    }
+
+    .table-finalis-top {
+      background-image: url(../images/2022/finalis-table-top.png);
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 30px;
+      margin-top: 20px;
+    }
+
+    .table-finalis-bottom {
+      background-image: url(../images/2022/finalis-table-bottom.png);
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .table-finalis,
+    .table-finalis-xs {
+      width: 100%;
+      height: auto;
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+      padding: 0px 20px;
+
+      table {
+        width: 100%;
+        color: #ff14c7;
+        background: #fff;
+        border-radius: 20px;
+        border-collapse: separate;
+        border-spacing: 0;
+
+        th {
+          font-family: $poppins-regular;
+          font-size: 22px;
+          text-align: center;
+        }
+
+        thead tr th,
+        tbody tr td {
+          border-right: 1px solid #2371ee;
+          padding: 10px;
+          width: 50%;
+          text-align: center;
+        }
+
+        thead tr th {
+          border-bottom: 4px solid #2371ee;
+        }
+
+        tbody tr td {
+          border-bottom: 1px solid #2371ee;
+        }
+
+        tbody tr td {
+          ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0px;
+          }
+
+          li {
+            text-align: center;
+            display: inline-block;
+
+            span {
+              width: auto;
+              margin: 0px;
+              top: -10px;
+              position: relative;
+            }
+          }
+        }
+
+        tbody tr {
+          color: #fff;
+
+          td {
+            position: relative;
+            background: #66c1ff;
+          }
+
+          td.win-left {
+            background: #66c1ff;
+            border-bottom-left-radius: 20px;
+          }
+
+          td.win-right {
+            background: #66c1ff;
+            border-bottom-right-radius: 20px;
+          }
+        }
+
+        thead tr.winner th,
+        tbody tr.winner td {
+          border-right: 1px solid #ffb246;
+          padding: 10px;
+          width: 50%;
+          text-align: center;
+        }
+
+        thead tr.winner th {
+          border-bottom: 4px solid #ffb246;
+        }
+
+        tbody tr.winner td {
+          border-bottom: 1px solid #ffb246;
+        }
+
+        tbody tr.winner {
+          color: #fff;
+          padding: 0px;
+
+          td.win-left {
+            background: #ff14c7;
+            border-bottom-left-radius: 20px;
+          }
+
+          td.win-right {
+            background: #ff14c7;
+            border-bottom-right-radius: 20px;
+          }
+
+          td.win {
+            background: #ff14c7;
+          }
+
+          td {
+            position: relative;
+          }
+        }
+
+        tbody tr.winner.best-golden-ticket {
+          font-family: $poppins-bold;
+
+          .golden-ticket {
+            width: 75px;
+            height: 60px;
+            background-image: url(../images/2022/icon_goldentiket-1.png);
+            background-position: 0px 0px;
+            background-size: 100% 100%;
+            position: absolute;
+            top: -3px;
+            left: 16px;
+            transform: rotate(-25deg);
+          }
+        }
+
+        .peserta-win {
+          margin-left: -50px;
+        }
+
+        .golden-ticket {
+          width: 62px;
+          height: 47px;
+          background-image: url(../images/2022/icon_goldentiket-1.png);
+          background-position: 0px 0px;
+          background-size: 100% 100%;
+          position: absolute;
+          top: 2px;
+          left: 16px;
+          transform: rotate(-25deg);
+        }
+
+        .golden-ticket-inline {
+          width: 46px;
+          height: 36px;
+          background-image: url(../images/2022/icon_goldentiket-1.png);
+          background-position: 0px 0px;
+          background-size: 100% 100%;
+          position: relative;
+          top: -1px;
+          transform: rotate(-25deg);
+          display: inline-block;
+          vertical-align: middle;
+          float: left;
+        }
+
+        tr:first-child th:first-child {
+          border-top-left-radius: 20px;
+        }
+
+        tr.winner th:first-child,
+        tr.winner td:first-child {
+          border-left: 1px solid #ffb246;
+        }
+
+        tr th:first-child,
+        tr td:first-child {
+          border-left: 1px solid #2371ee;
+        }
+      }
+    }
+
+    .table-finalis {
+      background-image: url(../images/2022/finalis-table.png);
+    }
+
+    .table-finalis-xs {
+      background-image: url(../images/2022/finalis-table-sm.png);
+    }
+  }
+
+  .bgl {
+    font-family: "Boogaloo-Regular", Arial, Tahoma;
+    font-size: 38px;
+    font-style: italic;
+    color: #e435b8;
+  }
+
+  .warp-histori-finalis {
+    margin: 20px -55px;
+    text-align: center;
+
+    .title-kat-histori {
+      font-family: $poppins-bold;
+      font-size: 17px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .warp-btn-histori-finalis {
+      display: flex;
+      width: 95%;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .btn-histori-finalis,
+    .btn-histori-finalis-golden,
+    .btn-histori-finalis-win {
+      margin: 0px 5px;
+
+      a {
+        background-position: 0px 0px;
+        background-size: 100% 100%;
+        font-family: $poppins-bold;
+        font-size: 21px;
+        color: #359edd;
+        text-align: center;
+      }
+    }
+
+    .disable {
+      opacity: 0.4;
+    }
+
+    .btn-histori-finalis {
+      a {
+        display: block;
+        padding: 9px;
+        width: 140px;
+        height: 55px;
+        background-image: url(../images/2022/btn-histori.png);
+      }
+    }
+
+    .btn-histori-finalis-golden {
+      a {
+        display: block;
+        position: relative;
+        top: -8px;
+        width: 160px;
+        height: 73px;
+        background-image: url(../images/2022/btn-histori-golden.png);
+      }
+    }
+
+    .btn-histori-finalis-win {
+      a {
+        display: block;
+        width: 270px;
+        height: 55px;
+        background-image: url(../images/2022/btn-histori-win.png);
+      }
+    }
+  }
+}
+
+.table-nama {
+  position: relative;
+  width: 100%;
+}
+
+.logo-proud {
+  position: absolute;
+  bottom: 20px;
+  right: 73px;
+
+  img {
+    width: 220px;
+  }
+}
+
+.table-nama-column {
+  width: calc(50% - 12px);
+  padding: 0px;
+  float: left;
+  margin: 0px 6px;
+}
+
+.table-finalis-2 {
+  width: 55%;
+  height: auto;
+  background-image: url(../images/2022/bg-table-big.png);
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+  padding: 15px 10px 10px;
+  margin: 20px auto;
+
+  table {
+    width: 100%;
+    color: #ff14c7;
+    background: #fff;
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #000;
+    overflow: hidden;
+
+    th {
+      font-family: $poppins-regular;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    td {
+      font-size: 14px;
+      color: #58bbfc;
+    }
+
+    thead tr th:first-child,
+    tbody tr td:first-child {
+      border-right: 1px solid #9f9f9f;
+      padding: 5px 10px;
+      width: 50%;
+      text-align: center;
+    }
+
+    thead tr th {
+      border-bottom: 4px solid #9f9f9f;
+    }
+
+    tbody tr td {
+      border-bottom: 1px solid #9f9f9f;
+    }
+
+    thead tr:first-child th:first-child {
+      border-top-left-radius: 20px;
+    }
+
+    thead tr:first-child th:last-child {
+      border-top-right-radius: 20px;
+    }
+
+    tbody tr:last-child th:first-child {
+      border-bottom-left-radius: 20px;
+    }
+
+    tbody tr:last-child th:last-child {
+      border-bottom-right-radius: 20px;
+    }
+
+    tr th:first-child,
+    tr td:first-child {
+      // border-left: 1px solid #9f9f9f;
+    }
+  }
+}
+
+.title-kategori-2 {
+  width: 190px;
+  height: 42px;
+  background-image: url(../images/2022/btn-finalis.png);
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+
+  font-family: $poppins-med;
+  font-size: 16px;
+  color: #0098ef;
+  text-align: center;
+  padding: 7px 25px;
+  margin: auto;
+}
+
+.title-kategori-3 {
+  float: left;
+  width: 142px;
+  height: 50px;
+  background-image: url(../images/2022/btn-panah.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #0098ef;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.text-kategori {
+  width: auto;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.table-selengkapnya {
+  width: 300px;
+  float: none;
+  display: table;
+  clear: both;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.btn-more-finalis {
+  text-align: center;
+
+  img {
+    width: 210px;
+    margin: 30px 0px -10px;
+    transition: $trans-hover;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.pemenang {
+  padding: 60px 200px 200px;
+  background: #1b6df2;
+  background-image: url(../images/2022/fire-top.png),
+    url(../images/2022/fire-mid.png), url(../images/2022/fire-bottom.png),
+    url(../images/2022/awan-5.png), url(../images/2022/roket.png),
+    url(../images/2022/awan-left.png), url(../images/2022/finalis-right.png),
+    url(../images/2022/finalis-left.png);
+  background-position: 100% 20%, 5% 42%, 94% 75%, 104% 58%, 93% 34%, 0% 70%,
+    100% 100%, 0% 100%;
+  background-size: 190px, 190px, 190px, 180px, 404px, 225px, 370px, 400px;
+  background-repeat: no-repeat;
+
+  .awan-kinton {
+    position: absolute;
+    top: 504px;
+    left: 120px;
+    width: 190px;
+    height: auto;
+  }
+
+  .warp-header-pemenang {
+    display: flex;
+    flex-wrap: wrap;
+
+    .logo-bumn {
+      width: 50%;
+      padding: 15px 0px;
+
+      img {
+        width: auto;
+        height: 30px;
+      }
+    }
+
+    .logo-mandiri-finalis {
+      width: 50%;
+      text-align: right;
+
+      img {
+        width: auto;
+        height: 45px;
+      }
+    }
+  }
+
+  .warp-content-pemenang {
+    .greeting {
+      font-family: "Boogaloo-Regular", Arial, Tahoma;
+      font-size: 48px;
+      line-height: 55px;
+      margin-top: 40px;
+      color: #fff;
+      font-style: italic;
+      text-align: center;
+
+      .ocean {
+        color: #58bbfc;
+      }
+
+      .pink {
+        color: #e435b8;
+      }
+
+      .blue {
+        color: #144774;
+      }
+    }
+
+    .desc-greeting {
+      font-family: $poppins-med;
+      font-size: 17px;
+      line-height: 28px;
+      margin-top: 20px;
+      color: #fff;
+      padding: 0px 60px;
+      text-align: center;
+    }
+  }
+
+  .warp-table-pemenang {
+    margin-bottom: 60px;
+
+    .title-kompetisi {
+      font-family: "Boogaloo-Regular", Arial, Tahoma;
+      font-size: 32px;
+      font-style: italic;
+      color: #fff;
+      text-align: center;
+      margin: 30px;
+
+      &:before {
+        content: "";
+        background-image: url(../images/2022/medali.png);
+        background-position: 0px 0px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 67px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+    }
+
+    .table-pemenang {
+      background-image: url(../images/2022/bg-table-pemenang.png);
+      background-position: 0px 0px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
+      padding: 40px;
+    }
+
+    .warp-list-pemenang {
+      background: #fad400;
+      background-image: url(../images/2022/shine.png);
+      background-position: 95% 40px;
+      background-size: 150px;
+      background-repeat: no-repeat;
+      padding: 30px 50px 50px;
+      border-radius: 20px;
+    }
+
+    .list-pemenang {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0px;
+
+      img {
+        width: 120px;
+        height: auto;
+      }
+
+      .desc-pemenang {
+        width: calc(100% - 120px);
+        padding-left: 25px;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        .kategori {
+          font-family: $poppins-regular;
+          font-size: 16px;
+          font-style: italic;
+          color: #144774;
+        }
+
+        .nama,
+        .brand {
+          font-family: "Boogaloo-Regular", Arial, Tahoma;
+          font-size: 40px;
+          font-style: italic;
+          color: #144774;
+          line-height: 1;
+        }
+
+        .nama {
+          &:after {
+            content: "|";
+            font-family: "Boogaloo-Regular", Arial, Tahoma;
+            font-size: 40px;
+            font-style: italic;
+            color: #e434b8;
+            margin: 0px 2px 0px 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .desc-greeting {
+    font-family: $poppins-med;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 20px;
+    color: #fff;
+    padding: 0px 60px;
+    text-align: center;
+  }
+
+  .warp-histori-finalis {
+    margin: 20px -55px;
+    text-align: center;
+
+    .title-kat-histori {
+      font-family: $poppins-bold;
+      font-size: 17px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .warp-btn-histori-finalis {
+      display: flex;
+      width: 95%;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .btn-histori-finalis,
+    .btn-histori-finalis-golden,
+    .btn-histori-finalis-win {
+      margin: 0px 5px;
+
+      a {
+        background-position: 0px 0px;
+        background-size: 100% 100%;
+        font-family: $poppins-bold;
+        font-size: 21px;
+        color: #359edd;
+        text-align: center;
+      }
+    }
+
+    .disable {
+      opacity: 0.4;
+    }
+
+    .btn-histori-finalis {
+      a {
+        display: block;
+        padding: 9px;
+        width: 140px;
+        height: 55px;
+        background-image: url(../images/2022/btn-histori.png);
+      }
+    }
+
+    .btn-histori-finalis-golden {
+      a {
+        display: block;
+        position: relative;
+        top: -8px;
+        width: 160px;
+        height: 73px;
+        background-image: url(../images/2022/btn-histori-golden.png);
+      }
+    }
+
+    .btn-histori-finalis-win {
+      a {
+        display: block;
+        width: 270px;
+        height: 55px;
+        background-image: url(../images/2022/btn-histori-win.png);
+      }
+    }
+  }
+}
+
+/* Livin Fest */
+.livin-fest {
+  padding: 100px 200px 35px;
+  background: #f0eded;
+  background-image: url(../images/2022/bumn-color.png),
+    url(../images/2022/Logo-Mandiri-blue-yellow.png),
+    url(../images/2022/fest-border-bottom.png), url(../images/2022/fest-bg.png);
+  background-position: 6% 45px, 92% 30px, 0% 100%, 50% 100%;
+  background-size: 180px, 180px, 100%, 1155px;
+  background-repeat: no-repeat;
+
+  .fest-logo {
+    width: 745px;
+    margin: 20px auto;
+  }
+
+  .tanggal-fest {
+    font-family: $poppins-bold;
+    font-size: 22px;
+    color: #585858;
+    text-align: center;
+  }
+
+  .warp-list-guest {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 775px;
+    margin: 30px auto 10px;
+    justify-content: center;
+    z-index: 2;
+
+    &:after {
+      content: "";
+      width: 513px;
+      height: 207px;
+      background-color: #333130;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 35px;
+      z-index: -1;
+    }
+  }
+
+  .list-guest {
+    position: relative;
+    font-family: $poppins-bold;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    background-color: #dd5e6e;
+    border-radius: 50px;
+    border: 4px solid #333130;
+    padding: 2px 25px;
+
+    &:after {
+      content: "";
+      background: url("../images/2022/fest-btn-glow.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 15px;
+      height: 25px;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+    }
+  }
+
+  .fest-ket {
+    font-family: $poppins-bold;
+    font-size: 16px;
+    color: #fc452d;
+    text-align: center;
+    line-height: 120%;
+    margin: 10px 0px 10px;
+  }
+
+  .fest-web {
+    text-align: center;
+    margin-bottom: 5px;
+
+    a {
+      font-family: $poppins-bold;
+      font-size: 16px;
+      color: #fd4fd2;
+      line-height: 120%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 6px;
+    }
+
+    .web {
+      width: 208px;
+      height: 35px;
+      margin-right: 6px;
+    }
+  }
+}
+
+/* Opening Livin Fest */
+.opening-livin-fest {
+  padding: 60px 200px 60px;
+  background-image: url(../images/2022/opening-fest-left.png),
+    url(../images/2022/opening-fest-right.png),
+    url(../images/2022/opening-fest-bg.png);
+  background-position: 30% 100%, 66% 100%, 100% 100%;
+  background-size: 320px, 275px, 100% 100%;
+  background-repeat: no-repeat;
+
+  .title-opening {
+    font-family: $poppins-med;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  img {
+    width: 450px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .tag-opening {
+    font-family: $poppins-regular;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 110px;
+  }
+}
