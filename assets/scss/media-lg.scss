@@ -367,6 +367,508 @@
 			}
 		}
 	}
+		/* Jadwal */
+
+		.jadwal {
+			padding: 20px 0px;
+			background: #316fea;
+			background-image: url(../images/bottom-left.png), url(../images/Rocket.png);
+	
+			background-position: 22px 107%,95% 102%;
+			background-size: 171px 214px,235px 191px;
+			background-repeat: no-repeat;
+	
+			.container-jadwal {
+				.title {
+					position: relative;
+					display: flex;
+					justify-content: center;
+	
+					.title-jadwal {
+						display: flex;
+	
+						.logo-jadwal {
+							img {
+								margin-top: 38px;
+								margin-right: 10px;
+							}
+						}
+	
+						.nama-jadwal {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 26px;
+							line-height: 45px;
+							margin-top: 40px;
+							margin-right: 25px;
+							color: #fff;
+							font-style: italic;
+							text-align: center;
+						}
+	
+					}
+	
+					.title-lokasi {
+						display: flex;
+	
+						.logo-lokasi {
+							img {
+								margin-top: 38px;
+								margin-right: -27px;
+							}
+						}
+	
+						.nama-lokasi {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 26px;
+							line-height: 45px;
+							margin-top: 40px;
+							margin-left: 30px;
+							color: #fff;
+							font-style: italic;
+							text-align: center;
+						}
+					}
+				}
+			}
+	
+			.pink {
+				position: relative;
+				font-family: "Poppins-bold", Arial, Tahomaa;
+				font-size: 13px;
+				color: #fff;
+				text-align: center;
+				background-color: #fd4fd2;
+				border-radius: 50px;
+				border: 2px solid #fff;
+				padding: 2px 15px;
+	
+				&:after {
+					content: "";
+					background: url("../images/2022/fest-btn-glow.png");
+					background-repeat: no-repeat;
+					background-size: 100%;
+					width: 15px;
+					height: 10px;
+					position: absolute;
+					top: 11px;
+					left: 1px;
+				}
+			}
+	
+			.orange {
+				position: relative;
+				font-family: "Poppins-bold", Arial, Tahomaa;
+				font-size: 13px;
+				color: #fff;
+				text-align: center;
+				background-color: #f9805d;
+				border-radius: 50px;
+				border: 2px solid #fff;
+				padding: 2px 15px;
+	
+				&:after {
+					content: "";
+					background: url("../images/2022/fest-btn-glow.png");
+					background-repeat: no-repeat;
+					background-size: 100%;
+					width: 15px;
+					height: 10px;
+					position: absolute;
+					top: 11px;
+					left: 1px;
+				}
+	
+			}
+	
+			.rowndown {
+				margin-right: 5px;
+				position: relative;
+				font-family: "Poppins-bold", Arial, Tahomaa;
+				font-size: 14px;
+				color: #008B8B;
+				text-align: center;
+				background-color: #fefd55;
+				border-radius: 50px;
+				border: 2px solid #333130;
+				padding: 2px 10px;
+	
+				&:after {
+					content: "";
+					background: url("../images/fest-btn-glow-blue.png");
+					background-repeat: no-repeat;
+					background-size: 100%;
+					width: 15px;
+					height: 10px;
+					position: absolute;
+					top: 5px;
+					left: 1px;
+				}
+			}
+	
+			.bulan {
+				font-family: "Boogaloo-Regular",Arial,Tahoma;
+				font-size: 22px;
+				line-height: 45px;
+				margin-top: -5px;
+				margin-right: 16px;
+				margin-left: 60px;
+				color: #f9805d;
+				text-align: center;
+			}
+	
+			.container-jadwal-center {
+				padding: 21px 21px 21px 100px;
+				width: 100%;
+				height: 100%;
+	
+				.garis-putus {
+					padding-left: 160px;
+				}
+	
+				.day1-container {
+					margin-top: 30px;
+					width: 100%;
+	
+	
+					.day1-row1 {
+						flex-wrap: wrap;
+						display: flex;
+						margin-bottom: 7px;
+	
+						.img-day1 {
+							height: 20px;
+	
+							img {
+								width: 60px;
+								height: 60px;
+							}
+						}
+	
+						.date1-label {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 30px;
+							line-height: 30px;
+							margin-top: 5px;
+							margin-right: 5px;
+							color: #fff;
+							font-style: italic;
+							text-align: center;
+						}
+	
+						.circle {
+							margin-top: 5px;
+						}
+	
+						.tgl1-label {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 30px;
+							line-height: 30px;
+							margin-top: 5px;
+							margin-right: 25px;
+							color: rgb(118, 222, 241);
+							font-style: italic;
+							text-align: center;
+						}
+	
+	
+					}
+	
+					.day1-row2 {
+						flex-wrap: wrap;
+						display: flex;
+	
+						// .bulan {
+						// 	font-family: "Boogaloo-Regular", Arial, Tahoma;
+						// 	font-size: 33px;
+						// 	line-height: 30px;
+						// 	margin-top: -5px;
+						// 	margin-right: 20px;
+						// 	margin-left: 77px;
+						// 	color: #f9805d;
+						// 	text-align: center;
+						// }
+	
+						// .rowdown1 {
+						// 	margin-right: 5px;
+						// 	position: relative;
+						// 	font-family: "Poppins-bold", Arial, Tahomaa;
+						// 	font-size: 18px;
+						// 	color: #008B8B;
+						// 	text-align: center;
+						// 	background-color: #fefd55;
+						// 	border-radius: 50px;
+						// 	border: 2px solid #333130;
+						// 	padding: 2px 25px;
+	
+						// 	&:after {
+						// 		content: "";
+						// 		background: url("../images/fest-btn-glow-blue.png");
+						// 		background-repeat: no-repeat;
+						// 		background-size: 100%;
+						// 		width: 15px;
+						// 		height: 25px;
+						// 		position: absolute;
+						// 		top: 5px;
+						// 		left: 4px;
+						// 	}
+						// }
+	
+	
+					}
+	
+	
+				}
+	
+				.day2-container {
+					margin-top: 30px;
+					width: 100%;
+	
+	
+	
+					.day2-row1 {
+						flex-wrap: wrap;
+						display: flex;
+						margin-bottom: 10px;
+	
+						.img-day1 {
+							height: 30px;
+	
+							img {
+								width: 60px;
+								height: 60px;
+							}
+						}
+	
+						.date1-label {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 30px;
+							line-height: 30px;
+							margin-top: 5px;
+							margin-right: 5px;
+							color: #fff;
+							font-style: italic;
+							text-align: center;
+						}
+	
+						.circle {
+							margin-top: 5px;
+						}
+	
+						.tgl1-label {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 30px;
+							line-height: 30px;
+							margin-top: 5px;
+							margin-right: 20px;
+							color: rgb(118, 222, 241);
+							font-style: italic;
+							text-align: center;
+						}
+	
+	
+					}
+	
+					.day2-row2 {
+						flex-wrap: wrap;
+						display: flex;
+	
+						// .bulan {
+						// 	font-family: "Boogaloo-Regular", Arial, Tahoma;
+						// 	font-size: 33px;
+						// 	line-height: 30px;
+						// 	margin-top: -5px;
+						// 	margin-right: 20px;
+						// 	margin-left: 77px;
+						// 	color: #f9805d;
+						// 	text-align: center;
+						// }
+	
+						// .rowdown2 {
+						// 	margin-right: 5px;
+						// 	position: relative;
+						// 	font-family: "Poppins-bold", Arial, Tahomaa;
+						// 	font-size: 18px;
+						// 	color: #008B8B;
+						// 	text-align: center;
+						// 	background-color: #fefd55;
+						// 	border-radius: 50px;
+						// 	border: 2px solid #333130;
+						// 	padding: 2px 25px;
+	
+						// 	&:after {
+						// 		content: "";
+						// 		background: url("../images/fest-btn-glow-blue.png");
+						// 		background-repeat: no-repeat;
+						// 		background-size: 100%;
+						// 		width: 15px;
+						// 		height: 25px;
+						// 		position: absolute;
+						// 		top: 5px;
+						// 		left: 4px;
+						// 	}
+						// }
+	
+	
+					}
+	
+				}
+	
+				.day3-container {
+					margin-top: 30px;
+					width: 100%;
+	
+	
+					.day3-row1 {
+						flex-wrap: wrap;
+						display: flex;
+						margin-bottom: 10px;
+	
+						.img-day1 {
+							height: 20px;
+	
+							img {
+								width: 60px;
+								height: 60px;
+							}
+						}
+	
+						.date1-label {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 30px;
+							line-height: 30px;
+							margin-top: 5px;
+							margin-right: 5px;
+							color: #fff;
+							font-style: italic;
+							text-align: center;
+						}
+	
+						.circle {
+							margin-top: 5px;
+						}
+	
+						.tgl1-label {
+							font-family: "Boogaloo-Regular", Arial, Tahoma;
+							font-size: 30px;
+							line-height: 30px;
+							margin-top: 5px;
+							margin-right: 15px;
+							color: rgb(118, 222, 241);
+							font-style: italic;
+							text-align: center;
+						}
+	
+					}
+	
+					.day3-row2 {
+						flex-wrap: wrap;
+						display: flex;
+	
+						// .bulan {
+						// 	font-family: "Boogaloo-Regular", Arial, Tahoma;
+						// 	font-size: 33px;
+						// 	line-height: 45px;
+						// 	margin-top: -5px;
+						// 	margin-right: 20px;
+						// 	margin-left: 77px;
+						// 	color: #f9805d;
+						// 	text-align: center;
+						// }
+	
+						// .rowdown3 {
+						// 	margin-right: 5px;
+						// 	position: relative;
+						// 	font-family: "Poppins-bold", Arial, Tahomaa;
+						// 	font-size: 18px;
+						// 	color: #008B8B;
+						// 	text-align: center;
+						// 	background-color: #fefd55;
+						// 	border-radius: 50px;
+						// 	border: 2px solid #333130;
+						// 	padding: 2px 25px;
+	
+						// 	&:after {
+						// 		content: "";
+						// 		background: url("../images/fest-btn-glow-blue.png");
+						// 		background-repeat: no-repeat;
+						// 		background-size: 100%;
+						// 		width: 15px;
+						// 		height: 25px;
+						// 		position: absolute;
+						// 		top: 5px;
+						// 		left: 4px;
+						// 	}
+						// }
+	
+	
+					}
+	
+	
+				}
+	
+			}
+	
+			.title-asset-bottom-center1 {
+				font-family: "Poppins-bold", Arial, Tahomaa;
+				font-size: 16px;
+				color: #fff;
+				text-align: center;
+				line-height: 120%;
+				margin: 10px 0px 10px;
+			}
+	
+			.title-asset-bottom-center2 {
+				font-family: "Vividly-Regular", Arial, Tahoma;
+				font-size: 27px;
+				color: #fefd55;
+				text-align: center;
+				line-height: 120%;
+				margin: -10px 0px 10px;
+			}
+	
+			.logo-LS {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 30px;
+	
+				.logo_LS {
+					text-align: center;
+					margin-right: 10px;
+	
+					img {
+						width: 50px;
+						height: 50px;
+					}
+	
+	
+				}
+	
+				.LS {
+					position: relative;
+					font-family: "Vividly-Regular", Arial, Tahoma;
+					font-size: 30px;
+					color: #fff;
+					text-align: center;
+					background-color: #dd5e6e;
+					border-radius: 50px;
+					padding: 0px 10px;
+	
+					a {
+						color: #fff !important;
+					}
+				}
+			}
+	
+			.asset-bottom-center {
+				justify-content: center;
+	
+				.tag-container {
+					width: 100%;
+					text-align: center;
+				}
+			}
+	
+		}
 
 	/* About */
 	.about {
